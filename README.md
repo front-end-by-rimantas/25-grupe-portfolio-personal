@@ -1,8 +1,8 @@
-![ECO-FRIENDLY]https://img.shields.io/badge/ECO-FRIENDLY-green
-![TEAM-WORK]https://img.shields.io/badge/TEAM-WORK-yellow
-![CSS-CODE]https://img.shields.io/badge/CSS-CODE-orange
-![HTML-CODE]https://img.shields.io/badge/HTML-CODE-blue
-![JAVASCRIPT-CODE]https://img.shields.io/badge/JAVASCRIPT-CODE-blueviolet
+![ECO-FRIENDLY](https://img.shields.io/badge/ECO-FRIENDLY-green)
+![TEAM-WORK](https://img.shields.io/badge/TEAM-WORK-yellow)
+![CSS-CODE](https://img.shields.io/badge/CSS-CODE-orange)
+![HTML-CODE](https://img.shields.io/badge/HTML-CODE-blue)
+![JAVASCRIPT-CODE](https://img.shields.io/badge/JAVASCRIPT-CODE-blueviolet)
 
 ## This project is for educational porpuses only.
 
