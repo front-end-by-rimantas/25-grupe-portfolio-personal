@@ -4,7 +4,7 @@
 ![HTML-CODE](https://img.shields.io/badge/HTML-CODE-blue)
 ![JAVASCRIPT-CODE](https://img.shields.io/badge/JAVASCRIPT-CODE-blueviolet)
 
-## This project is for educational porpuses only.
+## This project is for educational purposes only.
 
 ### 25-grupe-portfolio-personal
 
@@ -16,6 +16,7 @@ Key features:
 - CSS
 - JAVASCRIPT
 
+## Authors
 
 Augustė [Github](https://github.com/augustebag)
 Lidija [Github](https://github.com/LidijaMK)
