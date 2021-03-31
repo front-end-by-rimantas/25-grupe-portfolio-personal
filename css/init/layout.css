@@ -36,14 +36,13 @@
   .container > .row {
     display: inline-block;
     width: 100%;
-    background-color: lightcyan;
     margin: 10px 0;
   }
   .container > .row > [class*='col-'] {
     float: left;
     margin-left: var(--half-gap);
     margin-right: var(--half-gap);
-    background-color: yellow;
+    
   }
   .container > .row > .col-1 {
     width: var(--col1);
