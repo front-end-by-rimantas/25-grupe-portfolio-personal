@@ -1,0 +1,46 @@
+.projects > .container {
+  display: inline-block;
+  width: 100%;
+  padding: 20px;
+}
+
+.projects > .container > .row {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+#projectsTitle {
+  color: #222222;
+  line-height: 40px;
+  font-size: 40px;
+  text-align: center;
+  text-transform: capitalize;
+  margin-bottom: 10px;
+}
+
+#projectsSubtitle {
+  color: #777777;
+  text-align: center;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 70px;
+}
+
+#filters {
+  text-align: center;
+  vertical-align: middle;
+}
+
+/*nuo 733 breakpoint-filtru paddingas visom kryptim tampa 6px*/
+
+#filters > .btn {
+  cursor: pointer;
+  line-height: 15px;
+  font-size: 14px;
+  padding: 18px 15px;
+  text-transform: uppercase;
+  text-align: center;
+  background: transparent;
+  border: none !important;
+  display: inline-flex;
+}
