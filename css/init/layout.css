@@ -291,9 +291,6 @@
   .row > .visible-md {
     display: inline-block;
   }
-  .row > .hidden-md {
-    display: none;
-  }
 }
 
 @media (min-width: 991px) {
