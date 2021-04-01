@@ -1,0 +1,43 @@
+.header-bar {
+    position: fixed;
+    /*z-index: 1;*/
+    background-color: yellow;
+    padding: 10px;   
+}
+.header-bar > .row {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+}
+
+.header-bar > .row > img {
+    height: 30px;
+
+}
+
+.nav-menu {
+    display: inline-block;
+    background-color: aqua;  
+    text-align: right;
+    
+    
+}
+
+.nav-menu > a {
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 5px 8px;
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 500;  
+}
+
+.nav-menu > a:last-child {
+    margin-left: 20px;
+}
+
+
+
+
