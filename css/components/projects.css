@@ -8,7 +8,7 @@
   padding-top: 120px;
   padding-bottom: 120px;
 }
-
+/*bug: tarp 991 ir 1037 zodis projects persimeta zemyn???*/
 #projectsTitle {
   color: #222222;
   line-height: 40px;
@@ -43,4 +43,23 @@
   background: transparent;
   border: none !important;
   display: inline-flex;
+}
+
+/* galerija: nuo sm i md pasikeicia dydis(150x150 -> 209x209). */
+
+/* #galleryContainer {
+}
+
+#gallery-row-first > * {
+
+}
+
+#gallery-row-second > * {
+
+} */
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(209px, 1fr));
+  grid-gap: 5px;
 }
