@@ -1,57 +1,8 @@
-@font-face {
-  src: url(../../fonts/poppins/Poppins-Black.ttf);
-  font-family: "poppins";
-  font-weight: 900;
-}
-@font-face {
-  src: url(../../fonts/poppins/Poppins-ExtraBold.ttf);
-  font-family: "poppins";
-  font-weight: 800;
-}
-@font-face {
-  src: url(../../fonts/poppins/Poppins-Bold.ttf);
-  font-family: "poppins";
-  font-weight: 700;
-}
-@font-face {
-  src: url(../../fonts/poppins/Poppins-SemiBold.ttf);
-  font-family: "poppins";
-  font-weight: 600;
-}
-@font-face {
-  src: url(../../fonts/poppins/Poppins-Medium.ttf);
-  font-family: "poppins";
-  font-weight: 500;
-}
-@font-face {
-  src: url(../../fonts/poppins/Poppins-Regular.ttf);
-  font-family: "poppins";
-  font-weight: 400;
-}
-@font-face {
-  src: url(../../fonts/poppins/Poppins-Light.ttf);
-  font-family: "poppins";
-  font-weight: 300;
-}
-@font-face {
-  src: url(../../fonts/poppins/Poppins-ExtraLight.ttf);
-  font-family: "poppins";
-  font-weight: 200;
-}
-@font-face {
-  src: url(../../fonts/poppins/Poppins-Thin.ttf);
-  font-family: "poppins";
-  font-weight: 100;
-}
-
 .projects > .container {
   display: inline-block;
   width: 100%;
   padding: 20px;
 }
-
-/* .projects > .container > .row {
-} */
 
 .projects > .container > .row > .menuContent {
   padding: 0 15px 70px;
@@ -71,10 +22,6 @@
   margin-bottom: 10px;
 }
 
-/* padding-left: 15px;
-padding-right: 15px;
-padding-bottom: 70px; */
-
 .subtitle {
   font-family: "poppins", sans-serif;
   color: #777777;
@@ -85,8 +32,6 @@ padding-bottom: 70px; */
 #filters {
   vertical-align: middle;
 }
-
-/*nuo 733 breakpoint-filtru paddingas visom kryptim tampa 6px*/
 
 #filters > .btn {
   font-family: "poppins", sans-serif;
@@ -100,24 +45,10 @@ padding-bottom: 70px; */
   cursor: pointer;
 }
 
-.square {
-  height: 520px;
-  width: 520px;
-}
-
-.galleryImage > .square {
-  max-width: 100%;
-  max-height: 100%;
-  object-fit: contain;
-  margin: 0;
-}
-
-/* galerija: nuo sm i md pasikeicia dydis(150x150 -> 209x209). */
-
-.grid {
+.wrapper {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
-  grid-gap: 1rem;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
 }
 
 .grid > div {
@@ -158,7 +89,6 @@ padding-bottom: 70px; */
 
 .galleryImage {
   text-transform: capitalize;
-
   padding: 10px !important;
   margin: 0 !important;
 }
