@@ -51,8 +51,10 @@
 }
 
 .projects > .container > .row {
-  padding-top: 70px;
-  padding-bottom: 120px;
+}
+
+.projects > .container > .row > .menuContent {
+  padding: 0 15px 70px;
 }
 
 .center {
@@ -102,21 +104,17 @@ padding-bottom: 70px; */
   padding: 20px 0;
 }
 
+.square {
+  height: 520px;
+  width: 520px;
+}
+
+.galleryImage > .square {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  background-image ;
+  margin: 0;
+}
+
 /* galerija: nuo sm i md pasikeicia dydis(150x150 -> 209x209). */
-
-/* #galleryContainer {
-}
-
-#gallery-row-first > * {
-
-}
-
-#gallery-row-second > * {
-
-} */
-
-/* .wrapper {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(209px, 1fr));
-  grid-gap: 5px;
-} */
