@@ -1,50 +1,5 @@
-@font-face {
-    src: url(../../fonts/poppins/Poppins-Black.ttf);
-    font-family: 'poppins';
-    font-weight: 900;
-}
-@font-face {
-    src: url(../../fonts/poppins/Poppins-ExtraBold.ttf);
-    font-family: 'poppins';
-    font-weight: 800;
-}
-@font-face {
-    src: url(../../fonts/poppins/Poppins-Bold.ttf);
-    font-family: 'poppins';
-    font-weight: 700;
-}
-@font-face {
-    src: url(../../fonts/poppins/Poppins-SemiBold.ttf);
-    font-family: 'poppins';
-    font-weight: 600;
-}
-@font-face {
-    src: url(../../fonts/poppins/Poppins-Medium.ttf);
-    font-family: 'poppins';
-    font-weight: 500;
-}
-@font-face {
-    src: url(../../fonts/poppins/Poppins-Regular.ttf);
-    font-family: 'poppins';
-    font-weight: 400;
-}
-@font-face {
-    src: url(../../fonts/poppins/Poppins-Light.ttf);
-    font-family: 'poppins';
-    font-weight: 300;
-}
-@font-face {
-    src: url(../../fonts/poppins/Poppins-ExtraLight.ttf);
-    font-family: 'poppins';
-    font-weight: 200;
-}
-@font-face {
-    src: url(../../fonts/poppins/Poppins-Thin.ttf);
-    font-family: 'poppins';
-    font-weight: 100;
-}
 .count {
-    background: linear-gradient(to right,  #8490ff 0%,#62bdfc 100%);
+    background: var(--gradient-background);
     padding: 100px 0;
 }
 .counter {
