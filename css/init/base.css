@@ -1,3 +1,60 @@
+
+/* FONTS */
+@font-face {
+    font-family: "Poppins";
+    src: url(../../fonts/poppins/Poppins-Black.ttf) format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+
+/* BACKGROUND COLORS */
+.bg-grey {
+    background-color: var(--color-grey);
+}
+.bg-blue-light {
+    background-color: var(--color-blue-dark);
+}
+.bg-dark-blue {
+    background-color: var(--color-dark-blue);
+}
+.bg-blue-gradient {
+    background: linear-gradient(to right,  #8490ff 0%,#62bdfc 100%);
+}
+
+/* TEXT STYLES */
+
+.center {
+    text-align: center;
+}
+
+.title {
+    display: inline-block;
+    width: 100%;
+    font-size: 34px;
+    line-height: 40px;
+    color: var(--color-black);
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+.subtitle {
+    display: inline-block;
+    width: 100%;
+    font-size: 14px;
+    line-height: 20px;
+    color: var(--color-dark-grey);
+    font-weight: normal;
+}
+
+.selected {
+    display: inline-block;
+    width: 100%;
+    font-size: 15px;
+    color: var(--color-black);
+    font-weight: normal;
+}
+
 /* FONT FAMILY */
 @font-face {
     src: url(../../fonts/poppins/Poppins-Black.ttf) format("truetype");
