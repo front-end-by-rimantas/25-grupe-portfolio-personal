@@ -4,6 +4,7 @@
 /* ABOUT ME */
 /* My Offered Services */
 /* ANIMATED NUMBER COUNTER */
+import counter from './components/counter.js'
 /* PORTFOLIO */
 /* TESTIMONIALS */
 /* PRICE AREA */
