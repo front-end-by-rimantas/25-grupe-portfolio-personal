@@ -5,14 +5,10 @@
 }
 
 .projects > .container > .row > .menuContent {
-  padding: 0 15px 70px;
+  padding: 0 15px 45px;
 }
 
-.center {
-  text-align: center;
-}
-
-.title {
+.galleryTitle {
   font-family: "poppins", sans-serif;
   font-weight: 600;
   color: #222222;
@@ -22,8 +18,8 @@
   margin-bottom: 10px;
 }
 
-.subtitle {
-  font-family: "poppins", sans-serif;
+.gallerySubtitle {
+  font-family: "Poppins", sans-serif;
   color: #777777;
   font-size: 14px;
   line-height: 20px;
@@ -31,10 +27,12 @@
 
 #filters {
   vertical-align: middle;
+  margin-bottom: 30px;
 }
 
-#filters > .btn {
-  font-family: "poppins", sans-serif;
+#filters > .filter {
+  font-family: "Poppins", sans-serif;
+  color: var(--color-black);
   line-height: 15px;
   font-size: 12px;
   text-transform: uppercase;
@@ -84,11 +82,12 @@
 }
 
 .galleryInner {
-  padding: 20px 0;
+  text-transform: capitalize;
+  font-family: "poppins", sans-serif;
+  padding: 10px !important;
+  margin: 0 !important;
 }
 
 .galleryImage {
-  text-transform: capitalize;
   padding: 10px !important;
-  margin: 0 !important;
 }
