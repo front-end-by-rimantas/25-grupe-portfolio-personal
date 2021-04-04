@@ -1,5 +1,5 @@
 .count {
-    background: var(--gradient-background);
+    background: var(--color-blue-gradiant);
     padding: 100px 0;
 }
 .counter {
