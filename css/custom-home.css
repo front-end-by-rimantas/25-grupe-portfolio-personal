@@ -16,6 +16,16 @@
 
 /* CUSTOM STILIUS SEKCIJOMS */
 /* header */
+.header-bar .btn {
+   background-image: none; 
+   color: var(--color-black);
+   padding: 0 30px;
+}
+.header-bar .btn:hover {
+    color: var(--color-blue);
+    box-shadow: none;
+ }
+ 
 /* HERO */
 /* ABOUT ME */
 /* Offered Services */
