@@ -1,3 +1,72 @@
-.pricecolumn {
-    background-color: yellow;
+
+.columns {
+    text-align: center;
+    color: blue;
+    
 }
+
+.circle {
+    position: relative;
+    margin: auto;
+    margin-top: 40px;
+    background: #EDEFFF;
+    width: 140px;
+    height: 140px;
+    border-radius: 84px;
+    border: 30px solid #E2E6FF;
+}
+.circle > h2 {
+    position: relative;
+    left: -5px;
+    top: 11px;
+    width: 90px;
+    height: 90px;
+    text-align: center;
+    font-weight: 300;
+    font-size: 37px;
+    color: #000;
+}
+
+.pricetitle {
+    margin-top: 30px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: #000;
+}
+
+.priceprg {
+    font-family: 'Poppins', sans-serif;
+    color: grey;
+    margin-top: 10px;
+
+}
+
+.tblcenter {
+    padding-top: 10px;
+    text-align: center;
+    list-style: none;
+    color: grey;
+   
+}
+.tblcenter > li:nth-of-type(2) {
+
+    border-top: 0 solid grey;
+}
+
+.tblcenter > li:nth-of-type(3) {
+
+    border-top: 0 solid grey;
+}
+
+.tblcenter > li {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 10px;
+    border-width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-top: 1px solid grey;
+    border-bottom: 1px solid gray;
+}
+
+
