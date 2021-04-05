@@ -4,4 +4,5 @@
     --color-blue-gradiant: linear-gradient(to right,  #8490ff 0%,#62bdfc 100%);
     --color-dark-blue: #04091e;
     --color-black: #222222;
+    --color-white: white;
 }
