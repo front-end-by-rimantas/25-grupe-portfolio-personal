@@ -1,6 +1,7 @@
 :root {
     --color-grey: #f9f9ff;
     --color-dark-grey: #777777;
+    --color-blue: #8490ff;
     --color-blue-gradiant: linear-gradient(to right,  #8490ff 0%,#62bdfc 100%);
     --color-dark-blue: #04091e;
     --color-black: #222222;
