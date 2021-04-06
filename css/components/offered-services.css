@@ -11,13 +11,11 @@
 .titleservices {
     display: flex;
     justify-content:center;
-    font-size: 36px;
     text-transform: capitalize;
-    line-height: 40px;
     margin-bottom: 20px;
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
-}
+  }
 
 .fa {
     display: flex;
@@ -25,12 +23,8 @@
     font-size: 35px;
     padding-top: 60px;
     padding-bottom: 20px;
+    color: rgb(53, 50, 50);
  }
-
-/* .fa:hover {
-    color:#8490ff;
-    transition: 300ms linear; 
-} */
 
 .offservices {
     display: flex;
@@ -41,12 +35,12 @@
     padding-top: 10px;
     padding-bottom: 15px;
     font-family: 'Poppins', sans-serif;
-    color: #222;
+    color: rgb(53, 50, 50);
 }
 
 .h1offsersize {
     font-size: 18px;
-    font-weight: 600px;
+    font-weight: 600;
 }
 
 .pservices {
