@@ -7,10 +7,13 @@
 }
 
 .columns {
-    transition: transform .2s;
+    transition: transform 400ms;
     text-align: center;
     color: blue;
-    
+    padding-bottom: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+        
 }
 
 .columns:hover {
@@ -19,6 +22,55 @@
     color: #F9F9FF;
     background: linear-gradient(to right,  #8490ff 0%,#62bdfc 100%);
     transform: scale(1.05);
+    transition: all 200ms;
+
+}
+
+.columns:hover .circle {
+    cursor: pointer;
+    background: #81AFFE;
+    border-color: #9CC1FD;
+    transition: 300ms;
+}
+
+.columns:hover .circle > h2 {
+    color: #F9F9FF;
+    transition: 300ms;
+}
+
+.columns:hover .pricetitle {
+    cursor: pointer;
+    color: #F9F9FF;
+    transition: 300ms;
+}
+
+.columns:hover .priceprg {
+    cursor: pointer;
+    color: #F9F9FF;
+    transition: 300ms;
+}
+
+.columns:hover .tblcenter {
+    cursor: pointer;
+    color: #F9F9FF;
+    transition: 300ms;
+}
+
+.columns:hover .price {
+    display: none;
+    transition: 300ms;
+}
+
+.columns:hover .abtn {
+    display:inline-block;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    margin-top: 25px;
+    text-decoration: none;
+    padding: 10px 50px;
+    padding-bottom: 10px;
+    color:#000;
+    background-color: #F9F9FF;
 
 }
 
@@ -34,11 +86,6 @@
     border: 30px solid #E2E6FF;
 }
 
-.circle:hover {
-    cursor: pointer;
-    background: #81AFFE;
-    border-color: #9CC1FD;
-}
 
 .circle > h2 {
     position: relative;
@@ -52,10 +99,6 @@
     color: #000;
 }
 
-.circle > h2:hover {
-    cursor: pointer;
-    color: #F9F9FF;
-}
 
 .pricetitle {
     margin-top: 30px;
@@ -64,21 +107,15 @@
     color: #000;
 }
 
-.pricetitle:hover {
-    cursor: pointer;
-    color: #F9F9FF;
-}
+
 
 .priceprg {
     font-family: 'Poppins', sans-serif;
+    font-size: 15px;
     color: grey;
     margin-top: 10px;
 }
 
-.priceprg:hover {
-    cursor: pointer;
-    color: #F9F9FF;
-}
 
 .tblcenter {
     padding-top: 10px;
@@ -106,10 +143,11 @@
     font-family: 'Poppins', sans-serif;
     font-size: 14px;
     font-weight: 300;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding: 15px;
+    
     border-top: 1px solid rgb(238, 238, 238);
     border-bottom: 1px solid rgb(238, 238, 238);
+   
     
 }
 
@@ -122,18 +160,9 @@
 
 }
 
-.price:hover {
-    
-}
-
 .abtn {
     display: none;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 400;
-    text-decoration: none;
-    color:#000;
-    background-color: #F9F9FF;
-    padding: 10px 50px;
+    
 }
 
 
