@@ -26,15 +26,16 @@
     float: left;
     margin-left: 10px;
 }
+.text-box > p {
+    font-weight: 300;
+    text-align: left;
+    word-break:keep-all;
+}
 .text-box > h1 {
     margin-top: 14px;
     line-height: 36px;
-    font-weight: 600;
-}
-.textimonial {
     text-align: left;
     word-break:keep-all;
-    font-weight: 300;
 }
 .positioning {
     margin-top: 70px;
