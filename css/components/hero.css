@@ -3,7 +3,7 @@
     flex-wrap: wrap;
 }
 
-.this {
+.this-is-me {
     display: inline-block;
     font-size: 15px;
     font-weight: 400;
@@ -11,7 +11,7 @@
     letter-spacing: 3px;
 }
 
-.this-is-me {
+.name {
     font-size: 60px;
     text-transform: uppercase;
     margin: 18px 0;
@@ -31,6 +31,13 @@
 .img {
     max-width: 100%;
     height: auto;
+}
+
+.details {
+    font-size: 30px;
+    text-transform: uppercase;
+    margin: 18px 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 @media (max-width: 990px) {
