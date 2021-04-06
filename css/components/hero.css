@@ -33,8 +33,12 @@
     height: auto;
 }
 
+.about-me {
+    margin-left: 40px;
+}
+
 .details {
-    font-size: 30px;
+    font-size: 33px;
     text-transform: uppercase;
     margin: 18px 0;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
