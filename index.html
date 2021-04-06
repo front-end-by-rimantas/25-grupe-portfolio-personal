@@ -8,42 +8,52 @@
     <link rel="stylesheet" href="./css/custom-home.css" />
   </head>
 
-<body>
-   <!-- HEADER START -->
-   <header class="container header-bar" >
-    <div class="row">
-       <a href="#"><img class="logo" src="./img/logo.png" alt="logo"></a>
-       <nav class="hidden visible-lg nav-menu">
-           <a href="#">Home</a>
-           <a href="#">About</a>
-           <a href="#">Services</a>
-           <a href="#">Portfolio</a>
-           <a href="#">Pricing</a>
-           <a href="#">Blog</a>
-           <a href="#">Pages</a>
-           <a class="btn" href="#">Contact</a>
-       </nav>
-       <a class="search btn" href="#"><i class="fa fa-search" aria-hidden="true"></i></a>
-    </div>
-   </header>
+  <body>
+    <!-- HEADER START -->
+    <header class="container header-bar">
+      <div class="row">
+        <a href="#"><img class="logo" src="./img/logo.png" alt="logo" /></a>
+        <nav class="hidden visible-lg nav-menu">
+          <a href="#">Home</a>
+          <a href="#">About</a>
+          <a href="#">Services</a>
+          <a href="#">Portfolio</a>
+          <a href="#">Pricing</a>
+          <a href="#">Blog</a>
+          <a href="#">Pages</a>
+          <a class="btn" href="#">Contact</a>
+        </nav>
+        <a class="search btn" href="#"
+          ><i class="fa fa-search" aria-hidden="true"></i
+        ></a>
+      </div>
+    </header>
     <!-- HEADER END -->
+    <<<<<<< Updated upstream
 
     <!-- HERO START-->
-    <div class="container bg-grey" >
-        <div class="row">
-            <div class="col-12 col-md-6">
-            <section class="hero">
-                <h1 class="this-is-me">This is me</h1>
-                <h2 class="name">Philip gilbert</h2>
-                <h3 class="paragraph">You will begin to realise why this exercise is called the Dickens Pattern with reference to the ghost showing Scrooge some different futures.</h3>
-            </section>
-            <a href="#" class="btn">discover now</a>
-            </div>  
-            <div class="col-12 col-md-6">
-            <img src="./img/man.png" alt="Philip img" class="img">
-            </div>
+    =======
+    <!-- HERO START -->
+    >>>>>>> Stashed changes
+    <div class="container bg-grey">
+      <div class="row">
+        <div class="col-12 col-md-6">
+          <section class="hero">
+            <h1 class="this-is-me">This is me</h1>
+            <h2 class="name">Philip gilbert</h2>
+            <h3 class="paragraph">
+              You will begin to realise why this exercise is called the Dickens
+              Pattern with reference to the ghost showing Scrooge some different
+              futures.
+            </h3>
+          </section>
+          <a href="#" class="btn">discover now</a>
         </div>
-    </div> 
+        <div class="col-12 col-md-6">
+          <img src="./img/man.png" alt="Philip img" class="img" />
+        </div>
+      </div>
+    </div>
 
     <!-- HERO END -->
 
@@ -51,20 +61,25 @@
     <div class="container">
       <div class="row">
         <div class="col-12 col-md-6">
-            <img src="./img/about.png" alt="About me img" class="img">
+          <img src="./img/about.png" alt="About me img" class="img" />
         </div>
         <div class="col-12 col-md-6">
-            <section class="about-me">
-                <h1 class="this-is-me">About me</h1>
-                <h2 class="details">Personal details</h2>
-                <h3 class="paragraph">Here, I focus on a range of items and features that we use in life without giving them a second thought. such as Coca Cola. Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</h3>
-                <a href="#" class="btn">view full details</a>
-            </section>
+          <section class="about-me">
+            <h1 class="this-is-me">About me</h1>
+            <h2 class="details">Personal details</h2>
+            <h3 class="paragraph">
+              Here, I focus on a range of items and features that we use in life
+              without giving them a second thought. such as Coca Cola. Dolor sit
+              amet, consectetur adipisicing elit, sed do eiusmod tempor
+              incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+              veniam, quis nostrud exercitation ullamco.
+            </h3>
+            <a href="#" class="btn">view full details</a>
+          </section>
         </div>
       </div>
     </div>
     <!-- ABOUT ME END -->
-
 
     <!-- My Offered Services START-->
     <div class="container">
@@ -222,7 +237,7 @@
           <button class="filter" onclick="filterSelection('raster')">
             raster
           </button>
-          <button class="filter" onclick="filterSelection('ui/ux')">
+          <button class="filter" onclick="filterSelection('ui-ux')">
             ui/ux
           </button>
           <button class="filter" onclick="filterSelection('printing')">
@@ -233,27 +248,49 @@
         <div class="row" id="galleryContainer">
           <div class="grid wrapper">
             <div
-              class="col-12 col-sm-4 col-md-4 col-xl-2 ml-xl-10 galleryImage"
+              class="container filterDiv all vector col-12 col-sm-4 col-md-4 col-xl-2 ml-xl-10"
             >
               <img src="./img/gallery/p1.jpg" alt="vinylDesignVector" />
+              <div class="middle">
+                <img
+                  src="./img/gallery/preview.png"
+                  class="binoculars"
+                  alt="preview"
+                />
+              </div>
               <div class="galleryInner">
                 <div class="row center"><h3>2d vinyl design</h3></div>
                 <div class="row gallerySubtitle center">vector</div>
               </div>
             </div>
+
             <div
-              class="container col-12 col-sm-4 col-md-4 col-xl-2 ml-xl-10 galleryImage"
+              class="container filterDiv all raster col-12 col-sm-4 col-md-4 col-xl-2 ml-xl-10"
             >
               <img src="./img/gallery/p2.jpg" alt="vinylDesignVector2" />
+              <div class="middle">
+                <img
+                  src="./img/gallery/preview.png"
+                  class="binoculars"
+                  alt="preview"
+                />
+              </div>
               <div class="galleryInner">
                 <div class="row center"><h3>2d vinyl design</h3></div>
                 <div class="row gallerySubtitle center">vector</div>
               </div>
             </div>
             <div
-              class="container col-12 col-sm-4 col-md-4 col-xl-2 ml-xl-10 galleryImage"
+              class="container filterDiv ui-ux all col-12 col-sm-4 col-md-4 col-xl-2 ml-xl-10"
             >
               <img src="./img/gallery/p3.jpg" alt="creativePosterAgency" />
+              <div class="middle">
+                <img
+                  src="./img/gallery/preview.png"
+                  class="binoculars"
+                  alt="preview"
+                />
+              </div>
               <div class="galleryInner">
                 <div class="row center"><h3>Creative poster design</h3></div>
                 <div class="row gallerySubtitle center">agency</div>
@@ -262,27 +299,48 @@
           </div>
           <div class="grid wrapper">
             <div
-              class="col-12 col-sm-4 col-md-4 col-xl-2 ml-xl-10 galleryImage"
+              class="container filterDiv all printing col-12 col-sm-4 col-md-4 col-xl-2 ml-xl-10"
             >
               <img src="./img/gallery/p4.jpg" alt="embosedLogoPortal" />
+              <div class="middle">
+                <img
+                  src="./img/gallery/preview.png"
+                  class="binoculars"
+                  alt="preview"
+                />
+              </div>
               <div class="galleryInner">
                 <div class="row center"><h3>embosed logo design</h3></div>
                 <div class="row gallerySubtitle center">portal</div>
               </div>
             </div>
             <div
-              class="col-12 col-sm-4 col-md-4 col-xl-2 ml-xl-10 galleryImage"
+              class="container filterDiv all vector col-12 col-sm-4 col-md-4 col-xl-2 ml-xl-10"
             >
               <img src="./img/gallery/p5.jpg" alt="3dHelmetDesignVector" />
+              <div class="middle">
+                <img
+                  src="./img/gallery/preview.png"
+                  class="binoculars"
+                  alt="preview"
+                />
+              </div>
               <div class="galleryInner">
                 <div class="row center"><h3>3D helmet design</h3></div>
                 <div class="row gallerySubtitle center">vector</div>
               </div>
             </div>
             <div
-              class="col-12 col-sm-4 col-md-4 col-xl-2 ml-xl-10 galleryImage"
+              class="container filterDiv all raster col-12 col-sm-4 col-md-4 col-xl-2 ml-xl-10"
             >
               <img src="./img/gallery/p6.jpg" alt="2dVinylDesignRaster" />
+              <div class="middle">
+                <img
+                  src="./img/gallery/preview.png"
+                  class="binoculars"
+                  alt="preview"
+                />
+              </div>
               <div class="galleryInner">
                 <div class="row center"><h3>2D Vinyl Design</h3></div>
                 <div class="row gallerySubtitle center">raster</div>

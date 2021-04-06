@@ -1,3 +1,4 @@
+/*TITLE AREA*/
 .projects > .container {
   display: inline-block;
   width: 100%;
@@ -24,6 +25,7 @@
   font-size: 14px;
   line-height: 20px;
 }
+/* FILTER AREA*/
 
 #filters {
   vertical-align: middle;
@@ -39,18 +41,32 @@
   background: transparent;
   padding: 18px 15px;
   border: none !important;
+  outline: none;
   display: inline-flex;
   cursor: pointer;
 }
 
+#filters > .filter:active {
+  color: var(--color-blue);
+}
+
+.filterDiv {
+  display: none; /* Hidden by default */
+}
+
+.show {
+  display: inline-block;
+}
+
+/*GRID AREA*/
 .wrapper {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
+  justify-content: center;
 }
 
 .grid > div {
-  background: transparent;
+  background-color: transparent;
   padding: 1rem;
   display: grid;
   position: relative;
@@ -81,6 +97,13 @@
   margin: 0;
 }
 
+.grid > div > img {
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: 0.5s ease;
+}
+
 .galleryInner {
   text-transform: capitalize;
   font-family: "poppins", sans-serif;
@@ -88,6 +111,17 @@
   margin: 0 !important;
 }
 
-.galleryImage {
-  padding: 10px !important;
+.middle {
+  transition: 0.5s ease-in-out;
+  opacity: 0;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.wrapper > .container:hover .middle {
+  background-color: var(--color-blue);
+  opacity: 0.5;
 }
