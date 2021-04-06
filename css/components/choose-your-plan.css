@@ -1,0 +1,143 @@
+.containercolor {
+    background-color: #F9F9FF;
+}
+
+.gap {
+    padding-bottom: 40px;
+}
+
+.columns {
+    transition: transform .2s;
+    text-align: center;
+    color: blue;
+    
+}
+
+.columns:hover {
+    display: block;
+    cursor: pointer;
+    color: #F9F9FF;
+    background: linear-gradient(to right,  #8490ff 0%,#62bdfc 100%);
+    transform: scale(1.05);
+
+}
+
+
+.circle {
+    position: relative;
+    margin: auto;
+    margin-top: 40px;
+    background: #EDEFFF;
+    width: 140px;
+    height: 140px;
+    border-radius: 84px;
+    border: 30px solid #E2E6FF;
+}
+
+.circle:hover {
+    cursor: pointer;
+    background: #81AFFE;
+    border-color: #9CC1FD;
+}
+
+.circle > h2 {
+    position: relative;
+    left: -5px;
+    top: 11px;
+    width: 90px;
+    height: 90px;
+    text-align: center;
+    font-weight: 300;
+    font-size: 37px;
+    color: #000;
+}
+
+.circle > h2:hover {
+    cursor: pointer;
+    color: #F9F9FF;
+}
+
+.pricetitle {
+    margin-top: 30px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: #000;
+}
+
+.pricetitle:hover {
+    cursor: pointer;
+    color: #F9F9FF;
+}
+
+.priceprg {
+    font-family: 'Poppins', sans-serif;
+    color: grey;
+    margin-top: 10px;
+}
+
+.priceprg:hover {
+    cursor: pointer;
+    color: #F9F9FF;
+}
+
+.tblcenter {
+    padding-top: 10px;
+    text-align: center;
+    list-style: none;
+    color: grey;
+}
+
+.tblcenter:hover {
+    cursor: pointer;
+    color: #F9F9FF;
+}
+
+.tblcenter > li:nth-of-type(2) {
+
+    border-top: 0 solid grey;
+}
+
+.tblcenter > li:nth-of-type(3) {
+
+    border-top: 0 solid grey;
+}
+
+.tblcenter > li {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-top: 1px solid rgb(238, 238, 238);
+    border-bottom: 1px solid rgb(238, 238, 238);
+    
+}
+
+.price {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 35px;
+    margin-top: 20px; 
+    color: #000;
+
+}
+
+.price:hover {
+    
+}
+
+.abtn {
+    display: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    text-decoration: none;
+    color:#000;
+    background-color: #F9F9FF;
+    padding: 10px 50px;
+}
+
+
+
+
+
+
