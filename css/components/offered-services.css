@@ -1,3 +1,13 @@
+.h:hover .fa {
+  color: #8490ff;
+  transition: 300ms linear;
+}
+
+.h:hover .offservices {
+  color: #8490ff;
+  transition: 300ms linear;
+}
+
 .titleservices {
     display: flex;
     justify-content:center;
@@ -17,10 +27,10 @@
     padding-bottom: 20px;
  }
 
-.fa:hover {
+/* .fa:hover {
     color:#8490ff;
     transition: 300ms linear; 
-}
+} */
 
 .offservices {
     display: flex;
@@ -39,16 +49,13 @@
     font-weight: 600px;
 }
 
-.offservices:hover { 
-    color:#8490ff; 
-    transition: 300ms linear; 
-} 
-
 .pservices {
     font-size: 14px;
     text-align: center;
+    padding: 0 46px;
     color: grey;
     font-family: 'Poppins', sans-serif;
+   
 }
 
 @media screen and (min-width: 601px) {
