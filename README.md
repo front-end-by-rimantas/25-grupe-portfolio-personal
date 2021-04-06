@@ -10,6 +10,8 @@
 
 Site published at https://front-end-by-rimantas.github.io/25-grupe-portfolio-personal/
 
+Design: [Personal](https://preview.colorlib.com/theme/personal/)
+
 Key features:
 
 - HTML
