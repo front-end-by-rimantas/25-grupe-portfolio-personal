@@ -10,7 +10,6 @@ import counter from "./components/counter.js";
 /* PRICE AREA */
 /* RECENT BLOG */
 /* BRANDS AREA */
-import brandsArea from "./components/brandsArea.js";
 /* FOOTER */
 
 // FUNKCIJU PANAUDOJIMAS
