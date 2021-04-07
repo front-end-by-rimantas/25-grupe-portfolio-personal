@@ -1,0 +1,15 @@
+.brandsArea {
+  background: var(--color-blue-gradiant);
+  padding: 80px 0;
+}
+
+.brandsArea > .row {
+  display: inline-block;
+  justify-content: space-evenly;
+}
+
+/*
+small 2
+medium 3
+large 4
+xl 5*/
