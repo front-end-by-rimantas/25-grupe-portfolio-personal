@@ -33,10 +33,27 @@
     text-decoration: none;
 }
  
- .text {
+.text {
      color: #8490ff;
  }
 
+input {
+    display: inline-block;
+    float: left;
+    padding-right: 120px;
+    padding-left: 20px;
+    height: 45px;
+    font-weight: 200;
+}
+
+.btn > .fa {
+    display: inline-block;
+    color: #fff;
+    font-size: 15px;
+    padding: 0;
+    line-height: 20px;
+    cursor: pointer;
+}
  .socials > .fa {
     color: #fff;
     display: inline-block;
