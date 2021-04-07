@@ -8,6 +8,9 @@
   }
 
 /* BACKGROUND COLORS */
+.bg-white {
+    background-color: var(--color-white);
+}
 .bg-grey {
     background-color: var(--color-grey);
 }
@@ -52,6 +55,14 @@
     font-size: 15px;
     color: var(--color-black);
     font-weight: normal;
+}
+
+.header {
+    display: inline-block;
+    width: 100%;
+    font-size: 18px;
+    color: var(--color-black);
+    font-weight: 600;
 }
 
 /* FONT FAMILY */
