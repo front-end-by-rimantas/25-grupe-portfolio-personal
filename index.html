@@ -5,8 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Personal</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flickity@2/dist/flickity.min.css"
+    />
     <link rel="stylesheet" href="./css/custom-home.css" />
-    <link rel="stylesheet" href="/path/to/flickity.css" media="screen" />
     <link rel="shortcut icon" type="image" href="./img/favicon.png" />
   </head>
 
@@ -584,20 +587,33 @@
 
     <!-- SECTION: BRANDS AREA START -->
     <div class="container brandsArea">
-      <div class="row brandsRow">
-        <div class="brand col-12 col-sm-6 col-md-3 col-lg-2 col-xl-1 ml-xl-1">
+      <div
+        class="row brandsRow gallery js-flickity"
+        data-flickity-options='{ "freeScroll": true, "wrapAround": true, "prevNextButtons": false, "pageDots": false}'
+      >
+        <div
+          class="gallery-cell brand col-12 col-sm-6 col-md-3 col-lg-2 col-xl-1 ml-xl-1"
+        >
           <a href="#"> <img src="./img/brands/l1.png" alt="" /></a>
         </div>
-        <div class="brand col-12 col-sm-6 col-md-3 col-lg-2 col-xl-1 ml-xl-1">
+        <div
+          class="gallery-cell brand col-12 col-sm-6 col-md-3 col-lg-2 col-xl-1 ml-xl-1"
+        >
           <a href="#"> <img src="./img/brands/l2.png" alt="" /></a>
         </div>
-        <div class="brand col-12 col-sm-6 col-md-3 col-lg-2 col-xl-1 ml-xl-1">
+        <div
+          class="gallery-cell brand col-12 col-sm-6 col-md-3 col-lg-2 col-xl-1 ml-xl-1"
+        >
           <a href="#"> <img src="./img/brands/l3.png" alt="" /></a>
         </div>
-        <div class="brand col-12 col-sm-6 col-md-3 col-lg-2 col-xl-1 ml-xl-1">
+        <div
+          class="gallery-cell brand col-12 col-sm-6 col-md-3 col-lg-2 col-xl-1 ml-xl-1"
+        >
           <a href="#"> <img src="./img/brands/l4.png" alt="" /></a>
         </div>
-        <div class="brand col-12 col-sm-6 col-md-3 col-lg-2 col-xl-1 ml-xl-1">
+        <div
+          class="gallery-cell brand col-12 col-sm-6 col-md-3 col-lg-2 col-xl-1 ml-xl-1"
+        >
           <a href="#"> <img src="./img/brands/l5.png" alt="" /></a>
         </div>
       </div>
@@ -611,6 +627,6 @@
     <!-- SECTION: FOOTER END-->
 
     <script src="./js/mainHome.js" type="module" defer></script>
-    <script src="/path/to/flickity.pkgd.min.js"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
   </body>
 </html>
