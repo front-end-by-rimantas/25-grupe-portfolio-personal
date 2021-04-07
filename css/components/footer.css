@@ -28,7 +28,24 @@
     color: var(--color-dark-grey);
     padding: 0;
 }
+
+.pafooter > a {
+    text-decoration: none;
+}
  
  .text {
      color: #8490ff;
+ }
+
+ .socials > .fa {
+    color: #fff;
+    display: inline-block;
+    font-size: 16px;
+    line-height: 20px;
+    padding: 0;
+    width: 23px;
+ }
+
+ .socials > a {
+    text-decoration: none;
  }
