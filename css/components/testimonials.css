@@ -3,11 +3,13 @@
     position: relative;
 }
 .m-size > h1 {
+    text-align: center;
     margin-top: -30px;
     font-weight: 600;
     font-size: 36px;
 }
 .m-size > p {
+    text-align: center;
     font-weight: 300;
 }
 .testimonial-box {
@@ -65,7 +67,7 @@
             display:  block;
             position: absolute;
             width: 44px;
-            top: 219px;
+            top: 233px;
             right: -55px;
             box-shadow: -14px 14px 20px  rgb(157 157 157 / 1%);
     }
