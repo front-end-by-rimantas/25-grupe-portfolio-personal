@@ -7,18 +7,18 @@
     color: white;
     font-size: 14px;
 }
-h1 {
+.counter-atributes > h1 {
     text-align: center;
     font-weight: 700;
     font-size: 36px;
     font-family: 'poppins';
     line-height: 40px;
 }
-p {
+.counter-atributes > p {
     text-align: center;
     font-family: 'poppins';
     font-weight: 300;
 }
-[class*='col-12'] {
+.counter-atributes {
     margin: 15px 0 15px 0;
 }
