@@ -3,18 +3,23 @@ function blog(selector, data) {
   const {list, imgPath, maxCount} = data;
 
   let HTML = '';
+  let generatedBlogCount = 0;
 
   for (let i = 0; i < list.length; i++) {
     const blogItem = list[i];
-    console.log(blogItem);
+    
 
     if (!blogItem.active) {
       continue;
     }
 
-    HTML += `<div class="col-12 col-md-4 blog-item"> 
+    if (generatedBlogCount === maxCount) {
+        break;
+    }
+    generatedBlogCount++;
+    HTML += `<div class="blog-item"> 
                 <div class="blog-img">
-                    <img src="${imgPath}${blogItem.img}" alt="#" />
+                    <img src="${imgPath + blogItem.img}" alt="#" />
                 </div>
                 <div class="social-info">
                     <div class="social-info-left" >
