@@ -4,14 +4,14 @@
 /* ABOUT ME */
 /* My Offered Services */
 /* ANIMATED NUMBER COUNTER */
-import counter from './components/counter.js'
+import counter from "./components/counter.js";
 /* PORTFOLIO */
 /* TESTIMONIALS */
 /* PRICE AREA */
 /* RECENT BLOG */
+import filterSelection from "./components/galleryFilter.js";
 /* BRANDS AREA */
 /* FOOTER */
-
 
 // FUNKCIJU PANAUDOJIMAS
 

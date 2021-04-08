@@ -32,7 +32,7 @@
   margin-bottom: 30px;
 }
 
-#filters > .filter {
+#filters > .filterBtn {
   cursor: pointer;
   font-family: "Poppins", sans-serif;
   color: var(--color-black);
@@ -46,11 +46,23 @@
   display: inline-flex;
 }
 
-#filters > .filter:hover {
+.filterBtn.active {
+  color: var(--color-blue);
+}
+
+#filters > .filterBtn:hover {
   color: var(--color-blue);
 }
 
 /*GRID AREA*/
+
+.filterDiv {
+  display: none;
+}
+
+.show {
+  display: grid;
+}
 
 .wrapper {
   display: grid;
