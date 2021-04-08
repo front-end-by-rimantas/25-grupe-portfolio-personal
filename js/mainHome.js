@@ -9,6 +9,8 @@ import counter from './components/counter.js'
 /* TESTIMONIALS */
 /* PRICE AREA */
 /* RECENT BLOG */
+import { blogData } from './data/blogData.js';
+import { blog } from './components/blog/blog.js';
 /* BRANDS AREA */
 /* FOOTER */
 
@@ -24,5 +26,6 @@ import counter from './components/counter.js'
 /* TESTIMONIALS */
 /* PRICE AREA */
 /* RECENT BLOG */
+blog('#blog-block', blogData);
 /* BRANDS AREA */
 /* FOOTER */
