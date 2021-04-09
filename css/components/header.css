@@ -51,6 +51,27 @@
 }
 
 
+.mobile-menu {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    font-size: 20px ;
+      
+
+}
+
+.mobile-menu > i {
+    position: absolute;
+    top: 0;
+    right: 0;
+    text-decoration: none;
+    font-size: 20px ;
+    color: var(--color-black);
+    transform: translate(-7%, -60%);
+    
+}
+
+
 
 
 
