@@ -1,9 +1,11 @@
+import { achievementsData } from "../../data/achievementsData.js";
+
 class Achievements {
     constructor(selector, data) {
         this.selector = selector;
         this.data = data;
-        
         this.DOM = null;
+        this.validUsedData = [];
         this.init();
     }
     
@@ -24,8 +26,10 @@ class Achievements {
             return false;
         }
         this.DOM = DOM;
-
+        
         this.render();
+        this.eventListener();
+        return true;
     }
 
     isValidSelector() {
@@ -63,16 +67,58 @@ class Achievements {
 
     render() {
         let HTML = '';
-
+        
         for (const item of this.data.list) {
+            this.validUsedData.push(item);
             HTML += `<div class="achievement">
-                        <div class="number">${item.number}</div>
+                        <div class="number">0</div>
                         <div class="subtitle">${item.subtitle}</div>
                     </div>`;
         }
 
         this.DOM.innerHTML = HTML;
+        }
+    
+numberAnimation(index, DOM) {
+    const screenBottom = scrollY + innerHeight;
+    const numberBottom = DOM.offsetTop + DOM.offsetHeight;
+
+    if (screenBottom > numberBottom) {
+        
+        if (this.validUsedData[index].animated) {
+            return false;
+        }
+        this.validUsedData[index].animated = true;
+        
+        const countFrom = 0;
+        const speed = 300;
+        let counterSpeed = this.validUsedData[index].number / speed;
+        let countPosition = 0;
+        
+        const stopPoint = setInterval( () => {
+            const currentNumber = Math.floor(countFrom + countPosition);
+            countPosition+=counterSpeed;
+            DOM.innerText = currentNumber;
+            
+            if (currentNumber >= this.validUsedData[index].number) {
+                DOM.innerText = this.validUsedData[index].number;
+                clearInterval(stopPoint);
+            }
+            
+        });
+    } 
+}   
+    
+    eventListener() {
+        addEventListener('scroll', () => {
+
+            const numbersDOM = document.querySelectorAll('.achievement > .number')
+
+            for (let i = 0; i < this.validUsedData.length; i++) {
+                this.numberAnimation(i, numbersDOM[i]);
+            }
+            
+        });
     }
 }
-
 export { Achievements }
