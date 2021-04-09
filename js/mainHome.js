@@ -4,7 +4,8 @@
 /* ABOUT ME */
 /* My Offered Services */
 /* ANIMATED NUMBER COUNTER */
-import counter from './components/counter.js'
+import { Achievements } from './components/achievements/Achievements.js'
+import { achievementsData } from './data/achievementsData.js'
 /* PORTFOLIO */
 /* TESTIMONIALS */
 /* PRICE AREA */
@@ -20,6 +21,7 @@ import counter from './components/counter.js'
 /* ABOUT ME */
 /* My Offered Services */
 /* ANIMATED NUMBER COUNTER */
+const achievement = new Achievements('#achievements_block',achievementsData);
 /* PORTFOLIO */
 /* TESTIMONIALS */
 /* PRICE AREA */
