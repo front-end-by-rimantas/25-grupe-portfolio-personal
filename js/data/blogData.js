@@ -7,7 +7,7 @@ const blogData = {
             title: 'Break through self doubt and fear',
             description: 'Dream interpretation has many forms; it can be done be done for the sake of fun, hobby or can be taken up as a serious career.',
             active: true
-        },
+        },       
         {
             img: 'b2.jpg',
             title: 'Portable fashion for young women',
@@ -20,12 +20,6 @@ const blogData = {
             description: 'So many of us are demotivated to achieve anything. Such people are not enthusiastic about anything. They don’t want to work involved.',
             active: true
         },
-        {
-            img: 'b1.jpg',
-            title: 'Demo',
-            description: 'Some demo text',
-            active: false
-        },     
     ]
 }
 

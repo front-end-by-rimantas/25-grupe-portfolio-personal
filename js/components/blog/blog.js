@@ -1,5 +1,17 @@
+import { isValidBlogPost } from './isValidBlogPost.js';
+import { isValidBlogItem } from './isValidBlogItem.js';
+
 function blog(selector, data) {
+    if (!isValidBlogPost(selector, data)) {
+        return false;
+    }
+
   const DOM = document.querySelector(selector);
+
+  if (!DOM) {
+      console.error('Pagal pateikta selektoriu nerastas norimas elementas');
+      return false;
+  }
   const {list, imgPath, maxCount} = data;
 
   let HTML = '';
@@ -7,12 +19,12 @@ function blog(selector, data) {
 
   for (let i = 0; i < list.length; i++) {
     const blogItem = list[i];
-    
 
-    if (!blogItem.active) {
-      continue;
+    if (!isValidBlogItem(blogItem) ||
+        !blogItem.active){
+        continue;
     }
-
+    
     if (generatedBlogCount === maxCount) {
         break;
     }
