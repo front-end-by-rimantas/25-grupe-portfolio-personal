@@ -7,6 +7,7 @@
 import counter from './components/counter.js'
 /* PORTFOLIO */
 /* TESTIMONIALS */
+import { testimonialsData } from './data/testimonialsData.js'
 /* PRICE AREA */
 /* RECENT BLOG */
 /* BRANDS AREA */
