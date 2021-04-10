@@ -31,6 +31,16 @@
     color: var(--color-black); 
 }
 
+.row > .hidden > .child:after {
+    font-family: 'FontAwesome';
+    content: '\f107';
+    margin-left: 5px;
+
+}
+.row > .hidden > .child:hover:after {
+    color: var(--color-blue);
+}
+
 .nav-menu > a:last-child {
     margin-left: 15px;
 }
@@ -38,6 +48,8 @@
 .nav-menu > a:hover {
     color: var(--color-blue);
 }
+
+
 
 .header-bar > .row > .search >.fa  {
     padding: 5px 0;
