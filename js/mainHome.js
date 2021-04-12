@@ -4,12 +4,14 @@
 /* ABOUT ME */
 /* My Offered Services */
 /* ANIMATED NUMBER COUNTER */
-import counter from "./components/counter.js";
+import { Achievements } from "./components/achievements/Achievements.js";
+import { achievementsData } from "./data/achievementsData.js";
 /* PORTFOLIO */
 /* TESTIMONIALS */
 /* PRICE AREA */
 /* RECENT BLOG */
-import filterSelection from "./components/galleryFilter.js";
+import { blogData } from "./data/blogData.js";
+import { blog } from "./components/blog/blog.js";
 /* BRANDS AREA */
 /* FOOTER */
 
@@ -20,9 +22,11 @@ import filterSelection from "./components/galleryFilter.js";
 /* ABOUT ME */
 /* My Offered Services */
 /* ANIMATED NUMBER COUNTER */
+const achievement = new Achievements("#achievements_block", achievementsData);
 /* PORTFOLIO */
 /* TESTIMONIALS */
 /* PRICE AREA */
 /* RECENT BLOG */
+blog("#blog-block", blogData);
 /* BRANDS AREA */
 /* FOOTER */
