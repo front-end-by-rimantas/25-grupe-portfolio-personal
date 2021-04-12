@@ -77,22 +77,6 @@
   grid-area: 1 / 1 / 2 / 2;
 }
 
-.middle {
-  opacity: 0;
-  position: absolute;
-  top: 45%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  text-align: center;
-  cursor: pointer;
-}
-
-.middle:hover {
-  opacity: 1;
-  transition: 0.5s ease-in-out;
-}
-
 .grid > div > img {
   width: 100%;
   height: 100%;
@@ -109,8 +93,23 @@
 .grid > div > img:hover {
   width: 100%;
   height: 100%;
-  transition: 0.5s ease;
-  opacity: 0.3;
+  transition: 0.5s all ease;
+  opacity: 0.5;
+}
+
+.fa-binoculars {
+  color: white;
+  justify-self: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: all 0.5s;
+}
+
+.fa-binoculars:hover {
+  opacity: 1;
 }
 
 .galleryInner {
