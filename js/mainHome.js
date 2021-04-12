@@ -10,6 +10,8 @@ import { achievementsData } from './data/achievementsData.js'
 /* TESTIMONIALS */
 /* PRICE AREA */
 /* RECENT BLOG */
+import { blogData } from './data/blogData.js';
+import { blog } from './components/blog/blog.js';
 /* BRANDS AREA */
 /* FOOTER */
 
@@ -26,5 +28,6 @@ const achievement = new Achievements('#achievements_block',achievementsData);
 /* TESTIMONIALS */
 /* PRICE AREA */
 /* RECENT BLOG */
+blog('#blog-block', blogData);
 /* BRANDS AREA */
 /* FOOTER */
