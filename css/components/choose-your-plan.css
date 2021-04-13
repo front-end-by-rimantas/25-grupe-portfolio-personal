@@ -6,7 +6,7 @@
     padding-bottom: 40px;
 }
 
-.columns {
+.plans-item {
     transition: transform 400ms;
     text-align: center;
     color: blue;
@@ -16,7 +16,7 @@
         
 }
 
-.columns:hover {
+.plans-item:hover {
     display: block;
     cursor: pointer;
     color: #F9F9FF;
@@ -26,42 +26,42 @@
 
 }
 
-.columns:hover .circle {
+.plans-item:hover .circle {
     cursor: pointer;
     background: #81AFFE;
     border-color: #9CC1FD;
     transition: 300ms;
 }
 
-.columns:hover .circle > h2 {
+.plans-item:hover .circle > h2 {
     color: #F9F9FF;
     transition: 300ms;
 }
 
-.columns:hover .pricetitle {
+.plans-item:hover .pricetitle {
     cursor: pointer;
     color: #F9F9FF;
     transition: 300ms;
 }
 
-.columns:hover .priceprg {
+.plans-item:hover .priceprg {
     cursor: pointer;
     color: #F9F9FF;
     transition: 300ms;
 }
 
-.columns:hover .tblcenter {
+.plans-item:hover .tblcenter {
     cursor: pointer;
     color: #F9F9FF;
     transition: 300ms;
 }
 
-.columns:hover .price {
+.plans-item:hover .price {
     display: none;
     transition: 300ms;
 }
 
-.columns:hover .abtn {
+.plans-item:hover .abtn {
     display:inline-block;
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
