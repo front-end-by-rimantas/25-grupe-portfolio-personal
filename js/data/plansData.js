@@ -10,6 +10,7 @@ const plansData = {
             planList3: 'Reliable Customer Service',
             price: '199.00',
             link: '#',
+            text: 'Buy now',
             active: true        
         },
         {
@@ -21,28 +22,31 @@ const plansData = {
             planList3: 'Reliable Customer Service',
             price: '299.00',
             link: '#',
+            text: 'Buy now',
             active: true        
         },
         {
             planNo: '03',
-            planTitle: '',
+            planTitle: 'Premium',
             description: 'For the individuals',
             planList1: 'Secure Online Transfer',
             planList2: 'Unlimited Styles for interface',
             planList3: 'Reliable Customer Service',
             price: '399.00',
             link: '#',
+            text: 'Buy now',
             active: true        
         },
         {
             planNo: '04',
-            planTitle: '',
+            planTitle: 'Exclusive',
             description: 'For the individuals',
             planList1: 'Secure Online Transfer',
             planList2: 'Unlimited Styles for interface',
             planList3: 'Reliable Customer Service',
             price: '499.00',
             link: '#',
+            text: 'Buy now',
             active: true        
         },
     ]

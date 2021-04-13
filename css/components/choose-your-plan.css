@@ -70,6 +70,7 @@
     padding: 10px 95px;
     color:#000;
     background-color: #F9F9FF;
+    width: 100%;
 
 }
 
@@ -156,7 +157,6 @@
     font-size: 35px;
     margin-top: 20px; 
     color: #000;
-
 }
 
 .abtn {
