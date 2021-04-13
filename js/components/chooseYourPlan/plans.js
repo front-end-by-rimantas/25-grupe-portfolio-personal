@@ -26,7 +26,7 @@ function plans (selector, data) {
         }
 
         generatedPlanCount++;
-        HTML += `<div class="col-12 col-md-6 col-lg-3 col-xl-3 plans-item">
+        HTML += `<div class="plans-item">
                     <div>
                         <div class="circle">
                             <h2>${planItem.planNo}</h2>
@@ -34,7 +34,7 @@ function plans (selector, data) {
                         <h3 class="pricetitle">${planItem.planTitle}</h3>
                         <p class="priceprg">${planItem.description}</p>
                     </div>
-                    <div class="col-12 col-md-6 col-lg-3 col-xl-3">
+                    <div class="col-12 col-md-6 col-lg-3 col-xl-3" >
                         <div>
                             <ul class="tblcenter">
                                 <li>${planItem.planList1}</li>

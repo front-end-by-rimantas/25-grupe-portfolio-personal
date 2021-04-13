@@ -6,17 +6,20 @@
     padding-bottom: 40px;
 }
 
-.plans-item {
-    transition: transform 400ms;
+.plans-list {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.plans-list > .plans-item {
     text-align: center;
     color: blue;
     padding-bottom: 20px;
-    padding-left: 15px;
+    padding-left: 15px; 
     padding-right: 15px;
-        
 }
 
-.plans-item:hover {
+.plans-list > .plans-item:hover {
     display: block;
     cursor: pointer;
     color: #F9F9FF;
@@ -26,52 +29,53 @@
 
 }
 
-.plans-item:hover .circle {
+.plans-list > .plans-item:hover .circle {
     cursor: pointer;
     background: #81AFFE;
     border-color: #9CC1FD;
     transition: 300ms;
 }
 
-.plans-item:hover .circle > h2 {
+.plans-list > .plans-item:hover .circle > h2 {
     color: #F9F9FF;
     transition: 300ms;
 }
 
-.plans-item:hover .pricetitle {
+.plans-list > .plans-item:hover .pricetitle {
     cursor: pointer;
     color: #F9F9FF;
     transition: 300ms;
 }
 
-.plans-item:hover .priceprg {
+.plans-list > .plans-item:hover .priceprg {
     cursor: pointer;
     color: #F9F9FF;
     transition: 300ms;
 }
 
-.plans-item:hover .tblcenter {
+.plans-list > .plans-item:hover .tblcenter {
     cursor: pointer;
     color: #F9F9FF;
     transition: 300ms;
 }
 
-.plans-item:hover .price {
+.plans-list > .plans-item:hover .price {
     display: none;
     transition: 300ms;
 }
 
-.plans-item:hover .abtn {
+.plans-list > .plans-item:hover .abtn {
     display:inline-block;
+    width: 100%;
+
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
     margin-top: 25px;
     text-decoration: none;
+    text-transform: uppercase;
     padding: 10px 95px;
     color:#000;
-    background-color: #F9F9FF;
-    width: 100%;
-
+    background-color: #F9F9FF; 
 }
 
 
@@ -144,7 +148,6 @@
     font-size: 14px;
     font-weight: 300;
     padding: 15px;
-    
     border-top: 1px solid rgb(238, 238, 238);
     border-bottom: 1px solid rgb(238, 238, 238);
    
@@ -160,9 +163,23 @@
 }
 
 .abtn {
-    display: none;
-    
+    display: none;  
 }
+
+@media (min-width: 767px) {
+    .plans-list {
+        grid-template-columns: 1fr 1fr;
+        
+    }
+}
+
+@media (min-width: 991px) {
+    .plans-list {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+       
+    }
+}
+
 
 
 
