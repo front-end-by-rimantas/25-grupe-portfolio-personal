@@ -4,8 +4,8 @@ function testimonials(selector, testData) {
   let {testList, testImgPath, testMaxCount} = testData;
 
   let HTML = '';
-   let scrSize = window.matchMedia('(min-width: 767px)');
-   let testCount = 0;
+  let testCount = 0;
+  let scrSize = window.matchMedia('(min-width: 767px)');
 
   function hideTestimonial(scrSize) {
     if (scrSize.matches) {
