@@ -27,7 +27,7 @@
 }
 /* FILTER AREA*/
 
-#filters {
+.filters {
   vertical-align: middle;
   margin-bottom: 30px;
 }
@@ -65,6 +65,10 @@
 
 .filterBtn:hover::before {
   right: 50%;
+}
+
+.visible {
+  visibility: visible;
 }
 
 /*GRID AREA*/
