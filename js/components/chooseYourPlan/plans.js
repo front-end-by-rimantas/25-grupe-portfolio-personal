@@ -1,8 +1,11 @@
+import { isValidPlans } from './isValidPlans.js';
+import { isValidPlansItem} from './isValidPlansItem.js';
 
 function plans (selector, data) {
-    // input validation
-
-    // logic
+    if (!isValidPlans(selector, data)) {
+        return false;
+    }
+    
     const DOM = document.querySelector(selector);
 
     if (!DOM) {
@@ -12,20 +15,21 @@ function plans (selector, data) {
     const { list, maxCount } = data;
 
     let HTML = '';
-    let generatedPlanCount = 0;
+    let generatedPlansCount = 0;
 
     for (let i = 0; i < list.length; i++) {
         const planItem = list[i];
 
-        if (!planItem.active){
-        continue;
+        if (!isValidPlansItem(planItem) || 
+            !planItem.active){
+            continue;
         }
 
-        if (generatedPlanCount === maxCount) {
+        if (generatedPlansCount === maxCount) {
             break;
         }
 
-        generatedPlanCount++;
+        generatedPlansCount++;
         HTML += `<div class="plans-item">
                     <div>
                         <div class="circle">
@@ -50,11 +54,6 @@ function plans (selector, data) {
                 </div>`;
     }
 
-  
-
-    //post logic validation
-
-    // result return
     DOM.innerHTML = HTML;
 }
 
