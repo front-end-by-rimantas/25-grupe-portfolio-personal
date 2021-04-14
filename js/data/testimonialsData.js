@@ -3,6 +3,7 @@ let testimonialsData = {
     testMaxCount: 2,
     testList: [
         {
+            id: 'testimonial-1',
             img: 'small-testimonials.png',
             paragraph: `Do you want to be even more successful? Learn to love learning 
             and growth. The more effort you put into improving your skills, the bigger
@@ -12,6 +13,7 @@ let testimonialsData = {
             active: true,
         },
         {
+            id: 'testimonial-2',
             img: 'small-testimonials2.png',
             paragraph: `A purpose is the eternal condition for success. Every former 
             smoker can tell you just how hard it is to stop smoking cigarettes.

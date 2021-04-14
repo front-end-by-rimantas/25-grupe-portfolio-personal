@@ -1,21 +1,32 @@
 .testimonials {
-    padding: 60px 0 30px 0;
+    padding: 140px 0 65px 0;
+    background-color: #8490ff;
+}
+.testimonials > .row {
     position: relative;
 }
-.testimonials > h1 {
+.testimonials .row > h1 {
     text-align: center;
-    margin-top: -30px;
+    margin-top: -28px;
     font-weight: 600;
     font-size: 36px;
 }
-.testimonials > p {
+.testimonials .row > p {
     text-align: center;
     font-weight: 300;
+}
+.testimonials_block {
+    display: grid;
+    grid-template-columns: 555px 555px;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    column-gap: 30px;  
 }
 .testimonial-box {
     margin: 80px 0 0 0;
     cursor: pointer;
-    padding: 20px;
+    padding: 25px;
     background-color: white;
 }
 .testimonial-box:hover .header-hover {
@@ -23,25 +34,23 @@
     transition: all 300ms;
 }
 .text-box {
-    padding: 0 40px 0 80px;
+    padding: 0 20px 0 68px;
 }
 .mini-logo {
     float: left;
-    margin-left: 10px;
+    margin-left: 5px;
 }
 .text-box > p {
     font-weight: 300;
     text-align: left;
     word-break:keep-all;
+    line-height: 22px;
 }
 .text-box > h1 {
-    margin-top: 14px;
-    line-height: 36px;
+    margin-top: 12px;
+    line-height: 30px;
     text-align: left;
     word-break:keep-all;
-}
-.positioning {
-    margin-top: 70px;
 }
 .testimonial-arrow {
     font-size: 18px;
@@ -59,25 +68,24 @@
     transition: all 300ms;
 }
 .arw-position {
+    margin-top: 15px;
     display: flex;
     justify-content: center;
 }
-@media (min-width: 767px) {
-    .testimonials-block {
-        grid-template-columns: 1fr 1fr;
+@media (max-width: 767px) {
+    .testimonial-2 {
+        display: none;
     }
 }
 @media (min-width: 991px) {
-    .m-size > .arw-position {
-            display:  block;
-            position: absolute;
-            width: 44px;
-            top: 233px;
-            right: -55px;
-            box-shadow: -14px 14px 20px  rgb(157 157 157 / 1%);
-    }
-    .testimonials-block {
-        grid-template-columns: 1fr 1fr;
+    .row > .arw-position {
+        margin: 0;
+        display:  block;
+        position: absolute;
+        width: 44px;
+        top: 0px;
+        right: 0px;
+        box-shadow: -14px 14px 20px  rgb(157 157 157 / 1%);
     }
 }
  

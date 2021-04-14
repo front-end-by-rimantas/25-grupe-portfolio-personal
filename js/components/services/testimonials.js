@@ -3,33 +3,21 @@ function testimonials(selector, testData) {
   const DOM = document.querySelector(selector);
   let {testList, testImgPath, testMaxCount} = testData;
 
-  
-  function hideTestimonial() {
-    if (window.innerWidth > 767) {
-      testMaxCount = 2;
-    }
-    else {
-      testMaxCount = 1;
-    }
-  }
-  window.addEventListener('resize', hideTestimonial);
-  hideTestimonial();
-  
   let HTML = '';
-  let testCount = 0;
+  let testCount = 0;  
 
   for (let i = 0; i < testList.length; i++) {
       const testimonial = testList[i];
-      
+
       if (!testimonial.active) {
-        continue;
+          continue;
       } 
       if (testCount === testMaxCount) {
         break;
       }
-      
+     
       testCount++;
-      HTML += `<div class="testimonial-box">
+      HTML += `<div class="testimonial-box ${testimonial.id}">
                 <img class="mini-logo"
                   src="${testImgPath + testimonial.img}"
                   alt="User logo"
@@ -43,7 +31,7 @@ function testimonials(selector, testData) {
                 </div>
                </div>`;
     }
-    
+   
 DOM.innerHTML = HTML;
 }
 
