@@ -1,6 +1,6 @@
 const galleryData = {
   imgPath: "./img/gallery/",
-  maxCount: 3,
+  maxCount: 6,
   list: [
     {
       img: "p1.jpg",
