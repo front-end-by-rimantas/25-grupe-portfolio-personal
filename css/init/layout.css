@@ -390,7 +390,16 @@
   .mobile-menu > i {
     display: none;
   }
-
+  .mobile-menu > .sear {
+    display: block;
+    position: absolute;
+    top: 12px;
+    left: 10px;
+    text-decoration: none;
+    font-size: 20px ;
+    color: var(--color-black);
+    transform: translate(-25%, -60%);
+}
 
 }
 
@@ -482,7 +491,18 @@
     display: none;
   }
   .mobile-menu {
-    display: none;
+    display: block;
+  }
+
+  .mobile-menu > .sear {
+    display: block;
+    position: absolute;
+    top: 12px;
+    left: 10px;
+    text-decoration: none;
+    font-size: 20px ;
+    color: var(--color-black);
+    transform: translate(-25%, -60%);
   }
 }
 
@@ -573,6 +593,16 @@
     display: none;
   }
   .mobile-menu {
-    display: none;
+    display: block;
+  }
+  .mobile-menu > .sear {
+    display: block;
+    position: absolute;
+    top: 12px;
+    left: 10px;
+    text-decoration: none;
+    font-size: 20px ;
+    color: var(--color-black);
+    transform: translate(-25%, -60%);
   }
 }

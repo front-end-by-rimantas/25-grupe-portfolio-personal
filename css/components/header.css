@@ -72,14 +72,25 @@
 
 }
 
-.mobile-menu > i {
+.mobile-menu > .bar {
     position: absolute;
-    top: 0;
+    top: 12px;
     right: 0;
     text-decoration: none;
     font-size: 20px ;
     color: var(--color-black);
     transform: translate(-7%, -60%);
+    
+}
+
+.mobile-menu > .sear {
+    position: absolute;
+    top: 12px;
+    right: 30px;
+    text-decoration: none;
+    font-size: 20px ;
+    color: var(--color-black);
+    transform: translate(-25%, -60%);
     
 }
 
