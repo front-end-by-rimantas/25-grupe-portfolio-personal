@@ -34,7 +34,7 @@ function plans (selector, data) {
                         <h3 class="pricetitle">${planItem.planTitle}</h3>
                         <p class="priceprg">${planItem.description}</p>
                     </div>
-                    <div class="col-12 col-md-6 col-lg-3 col-xl-3" >
+                    <div>
                         <div>
                             <ul class="tblcenter">
                                 <li>${planItem.planList1}</li>
