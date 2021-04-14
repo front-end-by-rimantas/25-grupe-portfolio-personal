@@ -37,7 +37,7 @@ function services(selector, data) {
         generatedServicesCount++;
         HTML += `<div class="col-12 col-md-6 col-lg-4 h">
                         <div>
-                            <i class="${services.icon}"></i>
+                            <i class="${services.icon} ico"></i>
                             <a href="${services.link}" class="offservices">
                             <h1 class="h1offsersize">${services.title}</h1>
                             </a>
