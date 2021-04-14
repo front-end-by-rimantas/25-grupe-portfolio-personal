@@ -31,6 +31,16 @@
     color: var(--color-black); 
 }
 
+.row > .hidden > .child:after {
+    font-family: 'FontAwesome';
+    content: '\f107';
+    margin-left: 5px;
+
+}
+.row > .hidden > .child:hover:after {
+    color: var(--color-blue);
+}
+
 .nav-menu > a:last-child {
     margin-left: 15px;
 }
@@ -38,6 +48,8 @@
 .nav-menu > a:hover {
     color: var(--color-blue);
 }
+
+
 
 .header-bar > .row > .search >.fa  {
     padding: 5px 0;
@@ -48,6 +60,38 @@
 
 .header-bar > .row > .search >.fa:hover{
     color: var(--color-blue);
+}
+
+
+.mobile-menu {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    font-size: 20px ;
+      
+
+}
+
+.mobile-menu > .bar {
+    position: absolute;
+    top: 12px;
+    right: 0;
+    text-decoration: none;
+    font-size: 20px ;
+    color: var(--color-black);
+    transform: translate(-7%, -60%);
+    
+}
+
+.mobile-menu > .sear {
+    position: absolute;
+    top: 12px;
+    right: 30px;
+    text-decoration: none;
+    font-size: 20px ;
+    color: var(--color-black);
+    transform: translate(-25%, -60%);
+    
 }
 
 
