@@ -26,7 +26,7 @@ import { blog } from "./components/blog/blog.js";
 /* ANIMATED NUMBER COUNTER */
 const achievement = new Achievements("#achievements_block", achievementsData);
 /* PORTFOLIO */
-gallery("#1stWrapper", galleryData);
+gallery("#wrapper1", galleryData);
 /* TESTIMONIALS */
 /* PRICE AREA */
 /* RECENT BLOG */
