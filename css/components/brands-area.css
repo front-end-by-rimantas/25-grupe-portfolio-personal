@@ -18,12 +18,12 @@
   opacity: 1;
 }
 
-@media (max-width: 991px) {
+/* @media (max-width: 991px) {
   .brandsArea .brandCell {
     width: 32%;
     height: 80px;
   }
-}
+} */
 
 /* @media (max-width: 767px) {
   .brandsArea .brandCell {

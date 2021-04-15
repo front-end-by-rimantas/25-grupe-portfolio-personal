@@ -15,6 +15,8 @@ import { galleryData } from "./data/galleryData.js";
 import { blogData } from "./data/blogData.js";
 import { blog } from "./components/blog/blog.js";
 /* BRANDS AREA */
+import { brands } from "./components/brands/brands.js";
+import { brandsData } from "./data/brandsData.js";
 /* FOOTER */
 
 // FUNKCIJU PANAUDOJIMAS
@@ -32,4 +34,5 @@ gallery("#wrapper1", galleryData);
 /* RECENT BLOG */
 blog("#blog-block", blogData);
 /* BRANDS AREA */
+brands("#brands_row", brandsData);
 /* FOOTER */
