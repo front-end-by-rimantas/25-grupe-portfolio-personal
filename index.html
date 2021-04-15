@@ -24,8 +24,7 @@
           <a class="child" href="#">Pages</a>
           <a class="btn" href="#">Contact</a>
         </nav>
-        <a class="search" href="#">
-        </a>
+        <a class="search" href="#"> </a>
         <a href="#" class="mobile-menu">
           <i class="fa fa-search sear"></i>
           <i class="fa fa-bars bar"></i>
@@ -213,20 +212,12 @@
             </div>
           </div>
         </div>
-        <div class="row col-12 col-lg-8 ml-lg-2 center" id="filters">
-          <button class="filter" onclick="filterSelection('all')">all</button>
-          <button class="filter" onclick="filterSelection('vector')">
-            vector
-          </button>
-          <button class="filter" onclick="filterSelection('raster')">
-            raster
-          </button>
-          <button class="filter" onclick="filterSelection('ui-ux')">
-            ui/ux
-          </button>
-          <button class="filter" onclick="filterSelection('printing')">
-            printing
-          </button>
+        <div class="row col-12 col-lg-8 ml-lg-2 center filters">
+          <div class="filterBtn js-all active">all</div>
+          <div class="filterBtn js-vector">vector</div>
+          <div class="filterBtn js-raster">raster</div>
+          <div class="filterBtn js-uiux">ui/ux</div>
+          <div class="filterBtn js-printing">printing</div>
         </div>
 
         <div class="row galleryContainer">
@@ -317,7 +308,8 @@
       </div>
       <div class="gap"></div>
       <div class="row containercolor">
-        <div class="col-12 col-md-6 col-lg-3 col-xl-3 columns">
+        <div id="plans_block" class="col-12 plans-list">
+          <!-- <div class="plans-item">
           <div>
             <div class="circle">
               <h2>01</h2>
@@ -325,7 +317,7 @@
             <h3 class="pricetitle">Economy</h3>
             <p class="priceprg">For the individuals</p>
           </div>
-          <div class="col-12 col-md-6 col-lg-3 col-xl-3">
+          <div>
             <div>
               <ul class="tblcenter">
                 <li>Secure Online Transfer</li>
@@ -338,67 +330,7 @@
               <a class="abtn" href="#">Buy now</a>
             </div>
           </div>
-        </div>
-        <div class="col-12 col-md-6 col-lg-3 col-xl-3 columns">
-          <div>
-            <div class="circle">
-              <h2>02</h2>
-            </div>
-            <h3 class="pricetitle">Business</h3>
-            <p class="priceprg">For the individuals</p>
-          </div>
-          <div class="col-12 col-md-6 col-lg-3 col-xl-3">
-            <div>
-              <ul class="tblcenter">
-                <li>Secure Online Transfer</li>
-                <li>Unlimited Styles for interface</li>
-                <li>Reliable Customer Service</li>
-              </ul>
-            </div>
-            <div class="price"><span>&#163;</span>299.00</div>
-            <a class="abtn" href="#">Buy now</a>
-            <div></div>
-          </div>
-        </div>
-        <div class="col-12 col-md-6 col-lg-3 col-xl-3 columns">
-          <div>
-            <div class="circle">
-              <h2>03</h2>
-            </div>
-            <h3 class="pricetitle">Premium</h3>
-            <p class="priceprg">For the individuals</p>
-          </div>
-          <div class="col-12 col-md-6 col-lg-3 col-xl-3">
-            <div>
-              <ul class="tblcenter">
-                <li>Secure Online Transfer</li>
-                <li>Unlimited Styles for interface</li>
-                <li>Reliable Customer Service</li>
-              </ul>
-            </div>
-            <div class="price"><span>&#163;</span>399.00</div>
-            <a class="abtn" href="#">Buy now</a>
-          </div>
-        </div>
-        <div class="col-12 col-md-6 col-lg-3 col-xl-3 columns">
-          <div>
-            <div class="circle">
-              <h2>04</h2>
-            </div>
-            <h3 class="pricetitle">Exclusive</h3>
-            <p class="priceprg">For the individuals</p>
-          </div>
-          <div class="col-12 col-md-6 col-lg-3 col-xl-3">
-            <div>
-              <ul class="tblcenter">
-                <li>Secure Online Transfer</li>
-                <li>Unlimited Styles for interface</li>
-                <li>Reliable Customer Service</li>
-              </ul>
-              <div class="price"><span>&#163;</span>499.00</div>
-              <a class="abtn" href="#">Buy now</a>
-            </div>
-          </div>
+          </div> -->
         </div>
       </div>
     </div>
