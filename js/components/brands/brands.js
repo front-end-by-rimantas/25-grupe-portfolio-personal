@@ -9,7 +9,7 @@ function brands(selector, data) {
   for (let i = 0; i < brandsArray.length; i++) {
     const brandsItem = brandsArray[i];
 
-    HTML += `<div class="brandCell col-12 col-sm-12 col-md-3 col-lg-2 col-xl-2">
+    HTML += `<div class="brandCell">
         <a href="${brandsItem.link}" class="brand"> <img src="${
       imgPath + brandsItem.img
     }" /></a></div>`;
