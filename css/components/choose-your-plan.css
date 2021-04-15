@@ -125,17 +125,17 @@
     color: #F9F9FF;
 }
 
-.tblcenter > li:nth-of-type(2) {
+.tblcenter > p:nth-of-type(2) {
 
     border-top: 0 solid grey;
 }
 
-.tblcenter > li:nth-of-type(3) {
+.tblcenter > p:nth-of-type(3) {
 
     border-top: 0 solid grey;
 }
 
-.tblcenter > li {
+.tblcenter > p {
     font-family: 'Poppins', sans-serif;
     font-size: 14px;
     font-weight: 300;
