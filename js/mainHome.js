@@ -11,6 +11,8 @@ import { gallery } from "./components/gallery/gallery.js";
 import { galleryData } from "./data/galleryData.js";
 /* TESTIMONIALS */
 /* PRICE AREA */
+import { plansData } from './data/plansData.js';
+import { plans } from './components/chooseYourPlan/plans.js'
 /* RECENT BLOG */
 import { blogData } from "./data/blogData.js";
 import { blog } from "./components/blog/blog.js";
@@ -29,6 +31,7 @@ const achievement = new Achievements("#achievements_block", achievementsData);
 gallery("#wrapper1", galleryData);
 /* TESTIMONIALS */
 /* PRICE AREA */
+plans('#plans_block', plansData);
 /* RECENT BLOG */
 blog("#blog-block", blogData);
 /* BRANDS AREA */
