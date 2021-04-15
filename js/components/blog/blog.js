@@ -35,13 +35,13 @@ function blog(selector, data) {
                 </div>
                 <div class="social-info">
                     <div class="social-info-left" >
-                        <img src="./img/blog/user.png" alt="#" />
-                        <a href="#">
-                        <span>Mark Wiens</span>
+                        <img src="${imgPath + blogItem.imgAuthor}" alt="#" />
+                        <a href="${blogItem.authorLink}">
+                        <span>${blogItem.author}</span>
                         </a>
                     </div>
                     <div class="social-info-right">
-                        <p> 13th Dec <i class="fa fa-heart-o"></i><i class="fa fa-comment-o"></i> 04</p>
+                        <p> ${blogItem.date} <i class="fa fa-heart-o"> ${blogItem.likes}</i><i class="fa fa-comment-o"></i> ${blogItem.coments}</p>
                     </div>
                 </div>
                 <a href="#">
