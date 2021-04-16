@@ -35,7 +35,7 @@ gallery("#wrapper1", galleryData);
 /* PRICE AREA */
 plans('#plans_block', plansData);
 /* RECENT BLOG */
-blog("#blog-block", blogData);
+blog("#blog_block", blogData);
 /* BRANDS AREA */
 brands("#brands_row", brandsData);
 /* FOOTER */
