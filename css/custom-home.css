@@ -23,7 +23,9 @@
 .header-bar .btn {
   background-image: none;
   color: var(--color-black);
-  padding: 0 30px;
+  padding: 5px 10px;
+  font-size: 12px;
+  line-height: 20px;
 }
 .header-bar .btn:hover {
   color: var(--color-blue);

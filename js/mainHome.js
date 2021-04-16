@@ -1,5 +1,7 @@
 // IMPORT
 /* HEADER */
+import { Header } from './components/header/Header.js';
+import { headerData } from './data/headerData.js';
 /* HERO */
 /* ABOUT ME */
 /* My Offered Services */
@@ -12,7 +14,7 @@ import { galleryData } from "./data/galleryData.js";
 /* TESTIMONIALS */
 /* PRICE AREA */
 import { plansData } from './data/plansData.js';
-import { plans } from './components/chooseYourPlan/plans.js'
+import { plans } from './components/chooseYourPlan/plans.js';
 /* RECENT BLOG */
 import { blogData } from "./data/blogData.js";
 import { blog } from "./components/blog/blog.js";
@@ -24,6 +26,7 @@ import { brandsData } from "./data/brandsData.js";
 // FUNKCIJU PANAUDOJIMAS
 
 /* HEADER */
+new Header('#header_block', headerData);
 /* HERO */
 /* ABOUT ME */
 /* My Offered Services */

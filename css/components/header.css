@@ -1,4 +1,4 @@
-.header-bar {
+.container.header-bar {
     position: fixed;
     z-index: 1;
     background-color: #fff;
@@ -16,11 +16,11 @@
 }
 
 .nav-menu {
-    text-align: right;
-    flex-grow: 8;       
+    text-align: right;  
+             
 }
 
-.row > .nav-menu > a {
+.nav-menu > a {
     display: inline-block;
     text-decoration: none;
     text-transform: uppercase;
@@ -48,7 +48,6 @@
 .nav-menu > a:hover {
     color: var(--color-blue);
 }
-
 
 
 .header-bar > .row > .search >.fa  {
