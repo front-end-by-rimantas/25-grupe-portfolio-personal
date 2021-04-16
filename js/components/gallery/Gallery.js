@@ -64,16 +64,12 @@ class Gallery {
   }
   generateList() {
     let HTML = "";
-    for (const galleryItem of this.data.list) {
-      HTML += `<div class="galleryItem col-12 col-md-4 col-xl-2 ml-xl-10">
-      <img src="${this.data.imgPath + galleryItem.img}" alt="${
-        galleryItem.alt
-      }" />
+    for (const item of this.data.list) {
+      HTML += `<div class="item col-12 col-md-4 col-xl-2 ml-xl-10">
+      <img src="${this.data.imgPath + item.img}" alt="${item.alt}" />
       <div class="galleryInner">
-        <div class="row inGalleryTitle center"><p>${galleryItem.title}</p></div>
-        <div class="row inGallerySubtitle center">${
-          galleryItem.description
-        }</div>
+        <div class="row inGalleryTitle center"><p>${item.title}</p></div>
+        <div class="row inGallerySubtitle center">${item.description}</div>
       </div>
     </div>`;
     }
@@ -81,37 +77,40 @@ class Gallery {
   }
 
   generateFilter() {
-    let HTML = `<div class="filterBtn active">All</div>`;
+    let HTML = `<div class="item active">all</div>`;
     let allTags = [];
     let uniqueTags = [];
 
-    for (const galleryItem of this.data.list) {
-      allTags = [...allTags, ...galleryItem.tags];
+    for (const item of this.data.list) {
+      allTags = [...allTags, ...item.tags];
     }
 
     for (const tag of allTags) {
-      const formatedTag = tag.toLowerCase();
-      if (!uniqueTags.includes(formatedTag)) {
-        uniqueTags = [...uniqueTags, formatedTag];
+      if (!uniqueTags.includes(tag)) {
+        uniqueTags = [...uniqueTags, tag];
       }
     }
+
     for (const tag of uniqueTags) {
-      HTML += `<div class="filterBtn">${tag}</div>`;
+      HTML += `<div class="item">${tag}</div>`;
     }
-    console.log(allTags);
-    console.log(uniqueTags);
     this.uniqueTags = ["all", ...uniqueTags];
     return HTML;
   }
+
   addEvents() {
-    const filterItems = this.DOM.querySelectorAll(".filters > .filterBtn");
+    const filterItems = this.DOM.querySelectorAll(".filters > .item");
+
     filterItems.forEach((item, index) => {
       item.addEventListener("click", () => {
         filterItems[this.activeFilterIndex].classList.remove("active");
         item.classList.add("active");
         this.activeFilterIndex = index;
+
+        console.log(this.uniqueTags[index]);
       });
     });
   }
 }
+
 export { Gallery };
