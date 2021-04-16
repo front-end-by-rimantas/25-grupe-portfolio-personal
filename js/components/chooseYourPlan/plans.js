@@ -39,12 +39,10 @@ function plans (selector, data) {
                         <p class="priceprg">${planItem.description}</p>
                     </div>
                     <div>
-                        <div>
-                            <ul class="tblcenter">
-                                <li>${planItem.planList1}</li>
-                                <li>${planItem.planList2}</li>
-                                <li>${planItem.planList3}</li>
-                            </ul>
+                        <div class="tblcenter">  
+                            <p>${planItem.planList1}</p>
+                            <p>${planItem.planList2}</p>
+                            <p>${planItem.planList3}</p>    
                         </div>
                         <div>
                             <div class="price"><span>&#163;</span>${planItem.price}</div>
