@@ -88,6 +88,10 @@
   margin: 0;
 }
 
+.galleryItem.hidden {
+  display: none;
+}
+
 .galleryItem::before {
   content: "";
   padding-bottom: 100%;

@@ -24,7 +24,7 @@ const galleryData = {
       alt: "agency-ui-ux-poster-design",
       description: "agency",
       active: true,
-      tags: ["agency", "uiux"],
+      tags: ["ui/ux"],
     },
     {
       img: "p4.jpg",

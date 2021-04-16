@@ -7,6 +7,7 @@ class Gallery {
     this.data = data;
 
     this.DOM = null;
+    this.activeFilterIndex = 0;
 
     this.init();
   }
@@ -25,7 +26,7 @@ class Gallery {
       return false;
     }
     this.render();
-    console.log(this);
+    this.addEvents();
   }
 
   isValidSelector() {
@@ -50,12 +51,8 @@ class Gallery {
   </div>
 
 
-  <div class="row center filters">
-  <div class="filterBtn">a</div>
-  <div class="filterBtn">b</div>
-  <div class="filterBtn">c</div>
-  <div class="filterBtn">d</div>
-  <div class="filterBtn">e</div> </div>
+  <div class="row center filters">${this.generateFilter()}</div>
+
 
   <div class="row galleryContainer">
           <div id="wrapper" class="grid wrapper">
@@ -67,17 +64,54 @@ class Gallery {
   }
   generateList() {
     let HTML = "";
-    for (const item of this.data.list) {
+    for (const galleryItem of this.data.list) {
       HTML += `<div class="galleryItem col-12 col-md-4 col-xl-2 ml-xl-10">
-      <img src="${this.data.imgPath + item.img}" alt="${item.alt}" />
+      <img src="${this.data.imgPath + galleryItem.img}" alt="${
+        galleryItem.alt
+      }" />
       <div class="galleryInner">
-        <div class="row inGalleryTitle center"><p>${item.title}</p></div>
-        <div class="row inGallerySubtitle center">${item.description}</div>
+        <div class="row inGalleryTitle center"><p>${galleryItem.title}</p></div>
+        <div class="row inGallerySubtitle center">${
+          galleryItem.description
+        }</div>
       </div>
     </div>`;
     }
     return HTML;
   }
-}
 
+  generateFilter() {
+    let HTML = `<div class="filterBtn active">All</div>`;
+    let allTags = [];
+    let uniqueTags = [];
+
+    for (const galleryItem of this.data.list) {
+      allTags = [...allTags, ...galleryItem.tags];
+    }
+
+    for (const tag of allTags) {
+      const formatedTag = tag.toLowerCase();
+      if (!uniqueTags.includes(formatedTag)) {
+        uniqueTags = [...uniqueTags, formatedTag];
+      }
+    }
+    for (const tag of uniqueTags) {
+      HTML += `<div class="filterBtn">${tag}</div>`;
+    }
+    console.log(allTags);
+    console.log(uniqueTags);
+    this.uniqueTags = ["all", ...uniqueTags];
+    return HTML;
+  }
+  addEvents() {
+    const filterItems = this.DOM.querySelectorAll(".filters > .filterBtn");
+    filterItems.forEach((item, index) => {
+      item.addEventListener("click", () => {
+        filterItems[this.activeFilterIndex].classList.remove("active");
+        item.classList.add("active");
+        this.activeFilterIndex = index;
+      });
+    });
+  }
+}
 export { Gallery };
