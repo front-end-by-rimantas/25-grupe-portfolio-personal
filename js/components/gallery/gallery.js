@@ -1,52 +1,83 @@
-import { isValidGalleryPost } from "./isValidGalleryPost.js";
-import { isValidGalleryItem } from "./isValidGalleryItem.js";
+// import { isValidGalleryPost } from "./isValidGalleryPost.js";
+// import { isValidGalleryItem } from "./isValidGalleryItem.js";
 
-function gallery(selector, data) {
-  if (!isValidGalleryPost(selector, data)) {
-    return false;
+class Gallery {
+  constructor(selector, data) {
+    this.selector = selector;
+    this.data = data;
+
+    this.DOM = null;
+
+    this.init();
   }
-
-  const DOM = document.querySelector(selector);
-
-  if (!DOM) {
-    console.error("Pagal pateikta selektoriu nerastas norimas elementas");
-    return false;
-  }
-
-  const galleryArray = data.list;
-  const imgPath = data.imgPath;
-  const maxCount = data.maxCount;
-
-  let HTML = "";
-  let generatedGalleryCount = 0;
-
-  for (let i = 0; i < galleryArray.length; i++) {
-    const galleryItem = galleryArray[i];
-
-    if (!isValidGalleryItem(galleryItem) || !galleryItem.active) {
-      continue;
+  init() {
+    if (!this.isValidSelector()) {
+      return false;
     }
-    if (generatedGalleryCount === maxCount) {
-      break;
+    if (!this.isValidData()) {
+      return false;
     }
-    generatedGalleryCount++;
-
-    HTML += `<div class="filterDiv vector col-12 col-md-4 col-xl-2 ml-xl-10">
-          <img src="${imgPath + galleryItem.img}" alt="vinylDesignVector" />
-          <i class="fa fa-binoculars"></i>
-          <div class="galleryInner">
-            <div class="row inGalleryTitle center"><p>${
-              galleryItem.title
-            }</p></div>
-            <div class="row inGallerySubtitle center">${
-              galleryItem.description
-            }</div>
-          </div>
-          </div>
-          </div>`;
+    this.DOM = document.querySelector(this.selector);
+    if (!this.DOM) {
+      console.error(
+        "ERROR: nepavyko rasti galerijos vietos pagal pateikta selektoriu."
+      );
+      return false;
+    }
+    this.render();
+    console.log(this);
   }
 
-  DOM.innerHTML = HTML;
+  isValidSelector() {
+    return true;
+  }
+
+  isValidData() {
+    return true;
+  }
+
+  render() {
+    const HTML = `
+  <div class="row">
+    <div class="menuContent center">
+      <div class="center">
+        <h1 class="galleryTitle">Our latest featured projects</h1>
+        <p class="gallerySubtitle">
+          Who are in extremely love with eco friendly system.
+        </p>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="row center filters">
+  <div class="filterBtn">a</div>
+  <div class="filterBtn">b</div>
+  <div class="filterBtn">c</div>
+  <div class="filterBtn">d</div>
+  <div class="filterBtn">e</div> </div>
+
+  <div class="row galleryContainer">
+          <div id="wrapper" class="grid wrapper">
+          ${this.generateList()}
+            </div>
+          </div>
+  `;
+    this.DOM.innerHTML = HTML;
+  }
+  generateList() {
+    let HTML = "";
+    for (const item of this.data.list) {
+      HTML += `<div class="galleryItem col-12 col-md-4 col-xl-2 ml-xl-10">
+      <img src="${this.data.imgPath + item.img}" alt="${item.alt}" />
+      <div class="galleryInner">
+        <div class="row inGalleryTitle center"><p>${item.title}</p></div>
+        <div class="row inGallerySubtitle center">${item.description}</div>
+      </div>
+    </div>`;
+    }
+    return HTML;
+  }
 }
 
-export { gallery };
+export { Gallery };
