@@ -47,12 +47,12 @@
             text: 'Pages',
             submenu: [
                 {type: 'link', href: '#', text: 'Elements'},
-                {type: 'link', href: '#', text: 'Level 2'},
-                {submenuLevel2: [
+                {type: 'link', href: '#', text: 'Level 2',
+                submenu: [
                     {type: 'link', href: '#', text: 'Item one'},
                     {type: 'link', href: '#', text: 'Item two'}
                 ], 
-                submenuLevel2Direction: 'left'
+                submenuDirection: 'left'
                 }
             ],
             submenuDirection:'bottom'
