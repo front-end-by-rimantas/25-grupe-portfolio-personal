@@ -1,3 +1,7 @@
+import { Logo } from './Logo.js';
+import { Nav } from './Nav.js';
+import { Search } from './Search.js';
+
 class Header {
     constructor(selector, data) {
         this.selector = selector;
@@ -18,6 +22,7 @@ class Header {
         }
 
         const DOM = document.querySelector(this.selector);
+        console.log(DOM)
         if (!DOM) {
             console.error('ERROR: pagal pateikta selector nepavyko rasti jokio elemento');
             return false;
@@ -27,9 +32,8 @@ class Header {
 
         this.DOM.classList.add('header-bar');
 
-         
-        // sukuri logo
-        // sukurti nav
+        this.render();
+
         // sukurti search
     }
 
@@ -40,6 +44,19 @@ class Header {
     isValidData() {
         return true;
     }
+
+    render() {
+        const HTML = `<div class="row"><div class="col-12 header-content"></div></div>`;
+
+        this.DOM.innerHTML = HTML;
+        
+        const col = this.DOM.querySelector('.col-12');
+
+        new Logo(col, this.data.logo);
+        new Nav(col, this.data.nav);
+    }
+
+    
 }
 
 export { Header }
