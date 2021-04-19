@@ -1,9 +1,15 @@
 .container.header-bar {
-    position: fixed;
-    z-index: 1;
     background-color: #fff;
     padding: 10px;   
+    box-shadow: 0 10px 20px #0002;
+    position: relative;
 }
+
+.container.header-bar.fixed {
+     position: fixed;  
+     top: 0; 
+     z-index: 1;
+ }
 
 .header-content {
     display: flex;
@@ -20,7 +26,9 @@
     display: flex;
     flex-direction: row;   
     line-height: 20px;   
-    font-size: 12px;     
+    font-size: 12px;
+    flex-grow: 8;
+    justify-content: flex-end;   
 }
 
 .header-bar nav a {
@@ -55,6 +63,10 @@
     margin-left: 5px;
 }
 
+/*.header-bar nav .item .fa:after {
+    content: '\f105'; 
+}*/
+
 .header-bar nav .dropdown {
     display: flex;
     position: relative;
@@ -67,11 +79,10 @@
     display: none;
     position: absolute;
     background-color: #fff;
-    box-shadow: 0 1px 2px #0001;
+    box-shadow: 0 4px 10px #0001;
     width: 200px;
     font-size: 12px;
     padding: 10px;
-    transition: 1s;
 }
 .header-bar nav .dropdown.bottom > .submenu {
     right: 0;
@@ -94,6 +105,48 @@
     line-height: 30px;
 }
 
+.header-bar > .row > .search >.fa  {
+    padding: 5px 0;
+    font-size: 20px ;
+    line-height: 20px;
+    color: var(--color-black);   
+}
+
+.header-bar > .row > .search >.fa:hover{
+    color: var(--color-blue);
+}
+
+.header-bar .search {  
+    position: relative; 
+}
+
+.header-bar .search > input {  
+    line-height: 20px; 
+    padding: 0 10px;
+    background-color: var(--color-grey);
+    outline: none;
+    font-size: 12px;
+    border-radius: 5px;
+    margin-right: 20px;
+    height: 30px;
+}
+
+.header-bar .search > .fa {
+    line-height: 20px;
+    text-align: center;  
+    position: absolute;
+    top: 50%;
+    right: 0; 
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.header-bar .search > .fa:hover {
+    font-size: 20px;
+    color: var(--color-blue);
+}
+
+
 
 
 /*
@@ -111,16 +164,7 @@
 
 
 /*
-.header-bar > .row > .search >.fa  {
-    padding: 5px 0;
-    font-size: 20px ;
-    line-height: 20px;
-    color: var(--color-black);   
-}
 
-.header-bar > .row > .search >.fa:hover{
-    color: var(--color-blue);
-}
 
 
 .mobile-menu {

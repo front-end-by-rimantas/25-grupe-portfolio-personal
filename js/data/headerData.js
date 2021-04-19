@@ -50,7 +50,8 @@
                 {type: 'link', href: '#', text: 'Level 2',
                 submenu: [
                     {type: 'link', href: '#', text: 'Item one'},
-                    {type: 'link', href: '#', text: 'Item two'}
+                    {type: 'link', href: '#', text: 'Item two',
+                }    
                 ], 
                 submenuDirection: 'left'
                 }
@@ -62,8 +63,9 @@
             href: '#',
             text: 'Contact',
         },
+    
      ],
-
+    
  }
 
  export { headerData}

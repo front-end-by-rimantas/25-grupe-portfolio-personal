@@ -33,6 +33,8 @@ class Header {
         this.DOM.classList.add('header-bar');
 
         this.render();
+        this.addEvent();
+
 
         // sukurti search
     }
@@ -47,13 +49,27 @@ class Header {
 
     render() {
         const HTML = `<div class="row"><div class="col-12 header-content"></div></div>`;
-
+        
         this.DOM.innerHTML = HTML;
         
         const col = this.DOM.querySelector('.col-12');
 
         new Logo(col, this.data.logo);
         new Nav(col, this.data.nav);
+        new Search(col);
+    }
+
+    addEvent(){
+        const fixHeaderPositionAtHeight = 200;
+        const staticHeaderPositionAtHeight = 40;
+        addEventListener('scroll', () => {
+           if (scrollY >= fixHeaderPositionAtHeight) {
+            this.DOM.classList.add('fixed');
+           } 
+           if (scrollY < staticHeaderPositionAtHeight) {
+            this.DOM.classList.remove('fixed');
+           }
+        })
     }
 
     

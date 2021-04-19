@@ -37,7 +37,7 @@ class Nav {
          if (item.submenu) {
              const labelHTML = item.type === 'link'
                 ? `<a href="${item.href}"class="label">${item.text}<i class="fa fa-angle-down"></i></a>`
-                : `<div class="label">${item.text}<i class="fa fa-angle-down"></i></div>`
+                : `<div class="label">${item.text}<i class="fa fa-angle-down fa-angle-down"></i></div>`
 
             let submenuHTML = '';
             for(const submenuItem of item.submenu) {
