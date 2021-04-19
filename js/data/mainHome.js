@@ -10,8 +10,6 @@ import { achievementsData } from './data/achievementsData.js';
 /* TESTIMONIALS */
 import { testimonialsData } from './data/testimonialsData.js';
 import { testimonials } from './components/services/testimonials.js';
-import { changeTestimonials } from './components/services/testimonials.js';
-import { autoChange } from './components/services/testimonials.js';
 /* PRICE AREA */
 /* RECENT BLOG */
 /* BRANDS AREA */
@@ -29,8 +27,6 @@ const achievement = new Achievements('#achievements_block',achievementsData);
 /* PORTFOLIO */
 /* TESTIMONIALS */
 testimonials('#testimonials_block', testimonialsData);
-changeTestimonials();
-autoChange();
 /* PRICE AREA */
 /* RECENT BLOG */
 /* BRANDS AREA */
