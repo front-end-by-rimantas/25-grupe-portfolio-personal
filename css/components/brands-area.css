@@ -1,0 +1,19 @@
+.brandsArea {
+  background: var(--color-blue-gradiant);
+  width: 100%;
+  padding: 70px 0;
+}
+
+.brandsArea > .brandsRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.brand {
+  opacity: 0.5;
+}
+
+.brand:hover {
+  opacity: 1;
+}

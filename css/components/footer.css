@@ -24,9 +24,9 @@
 .pafooter > .fa {
     display: inline-block;
     font-size: 14px;
-    line-height: 20px;
     color: var(--color-dark-grey);
     padding: 0;
+    line-height: inherit;
 }
 
 .pafooter > a {
@@ -42,18 +42,22 @@ input {
     float: left;
     padding-right: 120px;
     padding-left: 20px;
-    height: 45px;
+    height: 42px;
     font-weight: 200;
+    border: 1px;
+}
+.btn {
+    border: none;
 }
 
 .btn > .fa {
-    display: inline-block;
     color: #fff;
     font-size: 15px;
     padding: 0;
-    line-height: 20px;
+    line-height: 18px;
     cursor: pointer;
 }
+
  .socials > .fa {
     color: #fff;
     display: inline-block;
