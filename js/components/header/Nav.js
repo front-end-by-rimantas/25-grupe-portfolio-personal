@@ -74,6 +74,7 @@ class Nav {
              HTML += this.generateHTML(item);
          }
          this.DOM.insertAdjacentHTML('beforeend', `<nav>${HTML}</nav>`);
+         
  
      }
 }

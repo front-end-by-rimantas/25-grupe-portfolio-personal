@@ -1,6 +1,7 @@
 import { Logo } from './Logo.js';
 import { Nav } from './Nav.js';
 import { Search } from './Search.js';
+import { MobileMenu } from './MobileMenu.js';
 
 class Header {
     constructor(selector, data) {
@@ -57,6 +58,7 @@ class Header {
         new Logo(col, this.data.logo);
         new Nav(col, this.data.nav);
         new Search(col);
+        new MobileMenu(col);
     }
 
     addEvent(){
