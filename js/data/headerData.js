@@ -53,7 +53,7 @@
                     {type: 'link', href: '#', text: 'Item two',
                 }    
                 ], 
-                submenuDirection: 'left'
+                submenuDirection: 'right'
                 }
             ],
             submenuDirection:'bottom'

@@ -34,14 +34,23 @@ class Nav {
      generateHTML(item) {
          let HTML = '';
 
+         let labelDirectionHTML = '';
+         if (item.submenuDirection === 'left' || 
+         item.submenuDirection === 'right') {
+            labelDirectionHTML += `<i class="fa fa-angle-right"></i>`;
+         } else {
+            labelDirectionHTML += `<i class="fa fa-angle-down"></i>`; 
+         }
+
          if (item.submenu) {
-             const labelHTML = item.type === 'link'
-                ? `<a href="${item.href}"class="label">${item.text}<i class="fa fa-angle-down"></i></a>`
-                : `<div class="label">${item.text}<i class="fa fa-angle-down fa-angle-down"></i></div>`
+             let labelHTML = item.type === 'link'
+             ? `<a href="${item.href}"class="label">${item.text}${labelDirectionHTML}</a>`
+             : `<div class="label">${item.text}${labelDirectionHTML}</div>`;
 
             let submenuHTML = '';
             for(const submenuItem of item.submenu) {
                 submenuHTML += this.generateHTML(submenuItem);
+        
             }
 
              HTML += `<div class="item dropdown ${this.submenuDirection(item.submenuDirection)}">

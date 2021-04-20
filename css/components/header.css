@@ -42,7 +42,7 @@
     text-transform: uppercase;
     padding: 5px 10px;
     font-size: inherit;
-    line-height: inherit;
+    line-height: 20px;
     font-weight: 500;
     color: var(--color-black); 
 }
@@ -63,9 +63,10 @@
     margin-left: 5px;
 }
 
-/*.header-bar nav .item .fa:after {
-    content: '\f105'; 
-}*/
+.header-bar nav .item .fa-angle-right {
+    position: absolute;
+    right: 10px;
+}
 
 .header-bar nav .dropdown {
     display: flex;
@@ -85,8 +86,8 @@
     padding: 10px;
 }
 .header-bar nav .dropdown.bottom > .submenu {
-    right: 0;
-    top: 100%;   
+    left: 0;
+    top: 100%;  
 }
 
 .header-bar nav .dropdown.left > .submenu {
@@ -94,8 +95,14 @@
     top: 0;
 }
 
+.header-bar nav .dropdown.right > .submenu {
+    left: 100%;
+    top: 0;
+}
+
 .header-bar nav .dropdown.bottom > .submenu > .item,
-.header-bar nav .dropdown.left > .submenu > .item {
+.header-bar nav .dropdown.left > .submenu > .item,
+.header-bar nav .dropdown.right > .submenu > .item {
    text-transform: capitalize;
 }
 
