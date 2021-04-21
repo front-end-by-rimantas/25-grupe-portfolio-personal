@@ -84,6 +84,10 @@
   margin: 0;
 }
 
+.wrapper > .item.hidden {
+  display: none;
+}
+
 .wrapper > .item::before {
   content: "";
   padding-bottom: 100%;

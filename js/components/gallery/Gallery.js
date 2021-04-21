@@ -7,7 +7,9 @@ class Gallery {
     this.data = data;
 
     this.DOM = null;
+    this.allGalleryItemsDOM = [];
     this.activeFilterIndex = 0;
+    this.uniqueTags = [];
 
     this.init();
   }
@@ -61,11 +63,12 @@ class Gallery {
           </div>
   `;
     this.DOM.innerHTML = HTML;
+    this.allGalleryItemsDOM = this.DOM.querySelectorAll(".wrapper > .item");
   }
   generateList() {
     let HTML = "";
     for (const item of this.data.list) {
-      HTML += `<div class="item col-12 col-md-4 col-xl-2 ml-xl-10">
+      HTML += `<div class="item">
       <img src="${this.data.imgPath + item.img}" alt="${item.alt}" />
       <div class="galleryInner">
         <div class="row inGalleryTitle center"><p>${item.title}</p></div>
@@ -107,9 +110,19 @@ class Gallery {
         item.classList.add("active");
         this.activeFilterIndex = index;
 
-        console.log(this.uniqueTags[index]);
+        this.updateList(this.uniqueTags[index]);
       });
     });
+  }
+  updateList(tag) {
+    for (let i = 0; i < this.data.list.length; i++) {
+      const itemTags = this.data.list[i].tags;
+      if (itemTags.includes(tag) || tag === "all") {
+        this.allGalleryItemsDOM[i].classList.remove("hidden");
+      } else {
+        this.allGalleryItemsDOM[i].classList.add("hidden");
+      }
+    }
   }
 }
 

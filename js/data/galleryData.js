@@ -16,7 +16,7 @@ const galleryData = {
       alt: "vector-raster-2d-vinyl-design",
       description: "vector",
       active: true,
-      tags: ["vector", "raster"],
+      tags: ["vector"],
     },
     {
       img: "p3.jpg",
@@ -48,7 +48,7 @@ const galleryData = {
       alt: "vector-raster-2d-vinyl-design",
       description: "raster",
       active: true,
-      tags: ["vector", "raster"],
+      tags: ["raster"],
     },
   ],
 };
