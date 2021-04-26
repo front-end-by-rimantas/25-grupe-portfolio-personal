@@ -1,5 +1,7 @@
 // IMPORT
 /* HEADER */
+import { Header } from './components/header/Header.js';
+import { headerData } from './data/headerData.js';
 /* HERO */
 /* ABOUT ME */
 /* My Offered Services */
@@ -28,6 +30,7 @@ import { brandsData } from "./data/brandsData.js";
 // FUNKCIJU PANAUDOJIMAS
 
 /* HEADER */
+new Header('#header_block', headerData);
 /* HERO */
 /* ABOUT ME */
 /* My Offered Services */
