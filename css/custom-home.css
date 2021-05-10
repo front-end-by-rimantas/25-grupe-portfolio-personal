@@ -6,29 +6,32 @@
 /* 3rd party */
 @import "./3rd-party/font-awesome.min.css";
 /* components */
-@import './components/blog.css';
-@import './components/button.css';
-@import './components/choose-your-plan.css';
+@import "./components/blog.css";
+@import "./components/brands-area.css";
+@import "./components/button.css";
+@import "./components/choose-your-plan.css";
 @import "./components/counter.css";
 @import "./components/footer.css";
 @import "./components/header.css";
 @import "./components/hero.css";
-@import './components/offered-services.css';
+@import "./components/offered-services.css";
 @import "./components/projects.css";
 @import "./components/testimonials.css";
 
 /* CUSTOM STILIUS SEKCIJOMS */
 /* header */
 .header-bar .btn {
-   background-image: none; 
-   color: var(--color-black);
-   padding: 0 30px;
+  background-image: none;
+  color: var(--color-black);
+  padding: 5px 10px;
+  font-size: 12px;
+  line-height: 20px;
 }
 .header-bar .btn:hover {
-    color: var(--color-blue);
-    box-shadow: none;
- }
- 
+  color: var(--color-blue);
+  box-shadow: none;
+}
+
 /* HERO */
 /* ABOUT ME */
 /* Offered Services */

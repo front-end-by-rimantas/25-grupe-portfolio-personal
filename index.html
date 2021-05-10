@@ -11,26 +11,9 @@
 
   <body>
     <!-- HEADER START -->
-    <header class="container header-bar">
-      <div class="row">
-        <a href="#"><img class="logo" src="./img/logo.png" alt="logo" /></a>
-        <nav class="hidden visible-lg nav-menu">
-          <a href="#">Home</a>
-          <a href="#">About</a>
-          <a href="#">Services</a>
-          <a href="#">Portfolio</a>
-          <a href="#">Pricing</a>
-          <a class="child" href="#">Blog</a>
-          <a class="child" href="#">Pages</a>
-          <a class="btn" href="#">Contact</a>
-        </nav>
-        <a class="search" href="#">
-        </a>
-        <a href="#" class="mobile-menu">
-          <i class="fa fa-search sear"></i>
-          <i class="fa fa-bars bar"></i>
-        </a>
-      </div>
+    <header id="header_block" class="container">
+
+          
     </header>
     <!-- HEADER END -->
 
@@ -121,109 +104,34 @@
 
     <!-- SECTION: PORTFOLIO START -->
     <section class="container projects">
-      <div class="container">
-        <div
-          class="col-12 col-sm-10 ml-sm-1 col-md-10 ml-md-1 col-lg-8 ml-lg-2 row"
-        >
-          <div class="col-12 col-lg-8 ml-lg-2 menuContent center">
-            <div
-              class="col-12 col-sm-10 ml-sm-1 col-md-10 ml-md-1 col-lg-8 ml-lg-2 center"
-            >
-              <h1 class="galleryTitle">Our latest featured projects</h1>
-              <p class="gallerySubtitle">
-                Who are in extremely love with eco friendly system.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="row col-12 col-lg-8 ml-lg-2 center" id="filters">
-          <button class="filter" onclick="filterSelection('all')">all</button>
-          <button class="filter" onclick="filterSelection('vector')">
-            vector
-          </button>
-          <button class="filter" onclick="filterSelection('raster')">
-            raster
-          </button>
-          <button class="filter" onclick="filterSelection('ui-ux')">
-            ui/ux
-          </button>
-          <button class="filter" onclick="filterSelection('printing')">
-            printing
-          </button>
-        </div>
-
-        <div class="row galleryContainer">
-          <div id="wrapper1" class="grid wrapper">
-            <!-- <div class="filterDiv vector col-12 col-md-4 col-xl-2 ml-xl-10">
-              <img src="./img/gallery/p1.jpg" alt="vinylDesignVector" />
-              <i class="fa fa-binoculars"></i>
-              <div class="galleryInner">
-                <div class="row inGalleryTitle center"><p>2d vinyl design</p></div>
-                <div class="row inGallerySubtitle center">vector</div>
-              </div>
-            </div>
-            </div> -->
-          </div>
-        </div>
+      <div id="projects_block" class="container">
+           
       </div>
     </section>
     <!-- SECTION: PORTFOLIO END -->
 
     <!-- SECTION: TESTIMONIALS START -->
-    <div class="container bg-grey">
-      <div class="row m-size">
+    <div class="container-fluid testimonials-container bg-grey">
+      <div class="row header-section">
         <h1 class="title">Client’s Feedback About Me</h1>
         <p class="subtitle">
           It is very easy to start smoking but it is an uphill task to quit it.
           Ask any chain smoker or even a person.
         </p>
-        <div class="testimonial-box bg-white col-sm-12 col-md-6 col-lg-6">
-          <img
-            class="mini-logo"
-            src="./img/testimonials/small-testimonials.png"
-            alt="User logo"
-            height="33px"
-            width="33px"
-          />
-          <div class="text-box">
-            <p class="subtitle">
-              Do you want to be even more successful? Learn to love learning and
-              growth. The more effort you put into improving your skills, the
-              bigger the payoff you.
-            </p>
-            <h1 class="header header-hover">Harriet Maxwell</h1>
-            <p class="subtitle">CEO at Google</p>
+      </div>
+      <div class="testimonials">
+          <div class="overflow-box">
+            <div id="testimonials_block" class="testimonials-list">
+              TESTIMONIALS CONTENT
+            </div>
           </div>
-        </div>
-        <div
-          class="testimonial-box bg-white hidden visible-md col-md-6 col-lg-6"
-        >
-          <img
-            class="mini-logo"
-            src="./img/testimonials/small-testimonials2.png"
-            alt="User logo"
-            height="33px"
-            width="33px"
-          />
-          <div class="text-box">
-            <p class="subtitle">
-              A purpose is the eternal condition for success. Every former
-              smoker can tell you just how hard it is to stop smoking
-              cigarettes. However.
-            </p>
-            <h1 class="header header-hover">Carolyn Craig</h1>
-            <p class="subtitle">CEO at Facebook</p>
-          </div>
-        </div>
-        <div class="arw-position col-12 col-sm-12">
-          <i
-            class="fa fa-long-arrow-up testimonial-arrow"
-            aria-hidden="true"
-          ></i>
-          <i
-            class="fa fa-long-arrow-down testimonial-arrow"
-            aria-hidden="true"
-          ></i>
+        <div class="arw-position">
+          <button class="up">
+            <i class="fa fa-long-arrow-up testimonial-arrow" aria-hidden="true"></i>
+          </button>
+          <button class="down">
+            <i class="fa fa-long-arrow-down testimonial-arrow" aria-hidden="true"></i>
+          </button>
         </div>
       </div>
     </div>
@@ -240,7 +148,8 @@
       </div>
       <div class="gap"></div>
       <div class="row containercolor">
-        <div class="col-12 col-md-6 col-lg-3 col-xl-3 columns">
+        <div id="plans_block" class="col-12 plans-list">
+          <!-- <div class="plans-item">
           <div>
             <div class="circle">
               <h2>01</h2>
@@ -248,80 +157,18 @@
             <h3 class="pricetitle">Economy</h3>
             <p class="priceprg">For the individuals</p>
           </div>
-          <div class="col-12 col-md-6 col-lg-3 col-xl-3">
-            <div>
-              <ul class="tblcenter">
-                <li>Secure Online Transfer</li>
-                <li>Unlimited Styles for interface</li>
-                <li>Reliable Customer Service</li>
-              </ul>
+          <div>
+            <div class="tblcenter">
+                <p>Secure Online Transfer</p>
+                <p>Unlimited Styles for interface</p>
+                <p>Reliable Customer Service</p>
             </div>
             <div>
               <div class="price"><span>&#163;</span>199.00</div>
               <a class="abtn" href="#">Buy now</a>
             </div>
           </div>
-        </div>
-        <div class="col-12 col-md-6 col-lg-3 col-xl-3 columns">
-          <div>
-            <div class="circle">
-              <h2>02</h2>
-            </div>
-            <h3 class="pricetitle">Business</h3>
-            <p class="priceprg">For the individuals</p>
-          </div>
-          <div class="col-12 col-md-6 col-lg-3 col-xl-3">
-            <div>
-              <ul class="tblcenter">
-                <li>Secure Online Transfer</li>
-                <li>Unlimited Styles for interface</li>
-                <li>Reliable Customer Service</li>
-              </ul>
-            </div>
-            <div class="price"><span>&#163;</span>299.00</div>
-            <a class="abtn" href="#">Buy now</a>
-            <div></div>
-          </div>
-        </div>
-        <div class="col-12 col-md-6 col-lg-3 col-xl-3 columns">
-          <div>
-            <div class="circle">
-              <h2>03</h2>
-            </div>
-            <h3 class="pricetitle">Premium</h3>
-            <p class="priceprg">For the individuals</p>
-          </div>
-          <div class="col-12 col-md-6 col-lg-3 col-xl-3">
-            <div>
-              <ul class="tblcenter">
-                <li>Secure Online Transfer</li>
-                <li>Unlimited Styles for interface</li>
-                <li>Reliable Customer Service</li>
-              </ul>
-            </div>
-            <div class="price"><span>&#163;</span>399.00</div>
-            <a class="abtn" href="#">Buy now</a>
-          </div>
-        </div>
-        <div class="col-12 col-md-6 col-lg-3 col-xl-3 columns">
-          <div>
-            <div class="circle">
-              <h2>04</h2>
-            </div>
-            <h3 class="pricetitle">Exclusive</h3>
-            <p class="priceprg">For the individuals</p>
-          </div>
-          <div class="col-12 col-md-6 col-lg-3 col-xl-3">
-            <div>
-              <ul class="tblcenter">
-                <li>Secure Online Transfer</li>
-                <li>Unlimited Styles for interface</li>
-                <li>Reliable Customer Service</li>
-              </ul>
-              <div class="price"><span>&#163;</span>499.00</div>
-              <a class="abtn" href="#">Buy now</a>
-            </div>
-          </div>
+          </div> -->
         </div>
       </div>
     </div>
@@ -340,7 +187,7 @@
         </div>
       </div>
       <div class="row">
-        <div id="blog-block" class="col-12 blog-list">
+        <div id="blog_block" class="col-12 blog-list">
           <!--<div class="blog-item"> 
             <div class="blog-img">
               <img src="./img/blog/b1.jpg" alt="#" />
@@ -366,44 +213,77 @@
           </div> -->
         </div>
       </div>
-    </div> 
+    </div>
     <!-- SECTION: RECENT BLOG END-->
 
     <!-- SECTION: BRANDS AREA START -->
-    <div class="container">
-      <div class="row">BRANDS AREA</div>
+    <div class="container brandsArea">
+      <div id="brands_row" class="row brandsRow">
+        <!-- <div class="brandCell">
+          <a href="#" class="brand"> <img src="./img/brands/l1.png" /></a>
+        </div> -->
+        </div>
+      </div>
     </div>
     <!-- SECTION: BRANDS AREA END-->
 
     <!-- SECTION: FOOTER START-->
     <div class="container bg-dark-blue">
       <div class="row area">
+        <div class="col-12 col-md-5">
+          <h2 class="footer">About me</h2>
+          <h3 class="pafooter">
+            We have tested a number of registry fix and clean utilities and
+            present our top 3 list on our site for your convenience.
+          </h3>
+          <h4 class="pafooter">
+            Copyright <i class="fa fa-copyright" aria-hidden="true"></i> 2021
+            All rights reserved | This template is made with
+            <i class="fa fa-heart-o" aria-hidden="true"></i> by
+            <a
+              href="https://front-end-by-rimantas.github.io/25-grupe-portfolio-personal/"
+              ><span class="text">Colorlib</span></a
+            >
+          </h4>
+        </div>
 
-          <div class="col-12 col-md-5">
-            <h2 class="footer">About me</h2>
-            <h3 class="pafooter">We have tested a number of registry fix and clean utilities and present our top 3 list on our site for your convenience.</h3>
-            <h4 class="pafooter">Copyright <i class="fa fa-copyright" aria-hidden="true"></i> 2021 All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://front-end-by-rimantas.github.io/25-grupe-portfolio-personal/"><span class="text">Colorlib</span></a></h4> 
-          </div>
+        <div class="col-12 col-md-5">
+          <h2 class="footer">Newsletter</h2>
+          <h3 class="pafooter">Stay updated with our latest trends</h3>
+          <form action="">
+            <input type="email" placeholder="Enter Email Address" />
+            <button type="submit" class="btn">
+              <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+            </button>
+          </form>
+        </div>
 
-          <div class="col-12 col-md-5">
-            <h2 class="footer">Newsletter</h2>
-            <h3 class="pafooter">Stay updated with our latest trends</h3>
-            <form action="">
-                <input type="email" placeholder="Enter Email Address">
-                <button type="submit" class="btn"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></button>
-            </form>
+        <div class="col-12 col-lg-2">
+          <h2 class="footer">Follow me</h2>
+          <h3 class="pafooter">Let us be social</h3>
+          <div class="socials">
+            <a
+              href="https://facebook.com/"
+              class="fa fa-facebook"
+              aria-hidden="true"
+            ></a>
+            <a
+              href="https://twitter.com/"
+              class="fa fa-twitter"
+              aria-hidden="true"
+            ></a>
+            <a
+              href="https://dribbble.com/"
+              class="fa fa-dribbble"
+              aria-hidden="true"
+            ></a>
+            <a
+              href="https://www.behance.net/"
+              class="fa fa-behance"
+              aria-hidden="true"
+            ></a>
           </div>
-
-          <div class="col-12 col-lg-2">
-            <h2 class="footer">Follow me</h2>
-            <h3 class="pafooter">Let us be social</h3>
-            <div class="socials">
-                <a href="https://facebook.com/" class="fa fa-facebook" aria-hidden="true"></a>
-                <a href="https://twitter.com/" class="fa fa-twitter" aria-hidden="true"></a>
-                <a href="https://dribbble.com/" class="fa fa-dribbble" aria-hidden="true"></a>
-                <a href="https://www.behance.net/" class="fa fa-behance" aria-hidden="true"></a>
-            </div>
-          </div>
+        </div>
       </div>
     </div>
     <!-- SECTION: FOOTER END-->
